@@ -156,3 +156,22 @@
     margin: auto;
   }
 }
+
+#homePageIntro {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+#homePageIntro > h1 {
+  font-size: 120px;
+}
+
+#aboutMe {
+  width: 50%;
+}
+#aboutMe > p {
+  color: black;
+  line-height: 1.2em;
+  font-size: 28px;
+}
