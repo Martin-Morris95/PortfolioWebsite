@@ -18,3 +18,19 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function openResume(evt){
+var x = document.getElementById("resume-knowledge");
+var button = document.getElementById("resume-show-button");
+
+    if (window.getComputedStyle(x).opacity == 0) {
+      x.classList.remove("rInActive")
+     x.classList.add("rActive")
+     button.innerHTML = "Hide Resume";
+  }else{
+   x.classList.add("rInActive")
+   x.classList.remove("rActive")
+     button.innerHTML = "Show Resume";
+  }
+
+}

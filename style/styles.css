@@ -219,4 +219,23 @@
 .project-container{
     display:flex;
     justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.content-head a{
+    font-size: 10px;
+     text-decoration: none;
+    font-weight: bold;
+}
+
+#resume-knowledge{
+
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+#resume-knowledge.rActive{
+   opacity: 1;
+    height: auto;
 }
