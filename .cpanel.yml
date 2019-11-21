@@ -3,4 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/aesbjgvuu0pm/public_html/
     - /bin/rm -Rf /home/aesbjgvuu0pm/public_html/*
-    - /bin/cp -R src/ $DEPLOYPATH
+    - /bin/cp home.html $DEPLOYPATH
+    - /bin/cp knowledge.html $DEPLOYPATH
+    - /bin/cp projects.html $DEPLOYPATH
