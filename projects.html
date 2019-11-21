@@ -60,32 +60,46 @@
             <!-- Tab links -->
             <div class="tab">
 
-                <button class="tablinks" onclick="openCity(event, 'Applications')">Applications</button>
-                <button class="tablinks" onclick="openCity(event, 'Games')">Games</button>
-                <button class="tablinks" onclick="openCity(event, 'Websites')">Websites</button>
+                <button class="tablinks" onclick="openTab(event, 'Applications')">Applications</button>
+                <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
+                <button class="tablinks" onclick="openTab(event, 'Websites')">Websites</button>
             </div>
 
             <!-- Tab content -->
             <div id="Websites" class="tabcontent">
-                <h3>Websites</h3>
+                
                 <h1 class="is-center">Coming Soon</h1>
             </div>
            
       
             <div id="Applications" class="tabcontent" >
-                <h3>Applications</h3>
-                <div class="project-container">
-
+                
+              <div id="applicationPanel">
+                <div class="tabSide">
+                    <button class="tablinksSide" onclick="openTabSide(event, 'hdt')">Help Desk Tool</button>
+                    <button class="tablinksSide" onclick="openTabSide(event, 'rla')">Revit Addin</button>
+                    <button class="tablinksSide" onclick="openTabSide(event, 'trt')">Travel Request</button>
+                  </div>
                   
- 
-                     <div class="project-description">
-                         
-                     </div>
-                 </div>
+                  <div id="hdt" class="tabcontentSide"style="display: none;">
+                    <h3>Help Desk Notes Tool</h3>
+                   
+                  </div>
+                  
+                  <div id="rla" class="tabcontentSide"style="display: none;">
+                    <h3>Revit Library Addin</h3>
+                    <p>Paris is the capital of France.</p>
+                  </div>
+                  
+                  <div id="trt" class="tabcontentSide" style="display: none;">
+                    <h3>Travel Request Tool</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                  </div>
+                </div>
             </div>
 
             <div id="Games" class="tabcontent" style="display: block">
-                <h3>Games</h3>
+                
                      <div class="project-container">
 
                    <iframe src="https://player.vimeo.com/video/144641475" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
