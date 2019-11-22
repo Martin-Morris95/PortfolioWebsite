@@ -62,11 +62,11 @@ var button = document.getElementById("resume-show-button");
     if (window.getComputedStyle(x).opacity == 0) {
       x.classList.remove("rInActive")
      x.classList.add("rActive")
-     button.innerHTML = "Hide Resume";
+     button.innerHTML = "Hide ";
   }else{
    x.classList.add("rInActive")
    x.classList.remove("rActive")
-     button.innerHTML = "Show Resume";
+     button.innerHTML = "Show ";
   }
 
 }

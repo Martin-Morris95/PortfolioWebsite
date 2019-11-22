@@ -137,22 +137,22 @@
         </div>
       </div>
       <div class="content" style="padding-bottom: 1%;"></div>
-        <h2 class="content-head" style="margin-top:.5em;display: inline;">
+        <h2 class="content-head" style="margin-top:.5em;">
           Resume
         </h2>
-
-        <a href="Resume.pdf" target="_blank"
-          ><button class="pure-button pure-button-active">
-            Download Resume
+        <button
+        class="pure-button pure-button-active knowledgeButt"
+        id="resume-show-button"
+        onclick="openResume(event)"
+      >
+        Show 
+      </button>
+        <a href="Resume.pdf" target="_blank" class="knowledgeButt"
+          ><button class="pure-button pure-button-active knowledgeButt">
+            Download
           </button>
         </a>
-        <button
-          class="pure-button pure-button-active"
-          id="resume-show-button"
-          onclick="openResume(event)"
-        >
-          Show Resume
-        </button>
+    
         <div id="resume-knowledge" class="rInActive">
           <div
             class="page-container-resume  l-box-lrg pure-g"
