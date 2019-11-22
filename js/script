@@ -18,7 +18,10 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+ 
+
  var slideIndex = 0;
+
 function openTabSide(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -68,7 +71,7 @@ var button = document.getElementById("resume-show-button");
 
 }
 
-
+ 
 var Revitto = null;
 function carouselRevitLib() {
    if(Revitto){
