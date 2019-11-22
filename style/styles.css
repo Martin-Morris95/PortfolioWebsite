@@ -359,3 +359,15 @@ iframe {
   background-color: white;
   z-index: 100;
 }
+
+#icon-container {
+}
+
+.softwareIcon {
+  margin: 2%;
+  width: 8%;
+  transition: width 0.2s ease;
+}
+.softwareIcon:hover {
+  width: 10%;
+}
