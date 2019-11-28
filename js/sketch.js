@@ -1,47 +1,13 @@
 var lineDistanceThresh = 250;
 var lines = [];
 var timer = 0;
+var buffer = 55;
+var destroyPage = false;
+var button;
 
 function setup() {
-  circles = [
-    { x: 975, y: 50 + 769, size: random(5, 15), active: false },
-    { x: 1035, y: 50 + 829, size: random(5, 15), active: false },
-    { x: 1113, y: 50 + 742, size: random(5, 15), active: false },
-    { x: 795, y: 50 + 880, size: random(5, 15), active: false },
-    { x: 1242, y: 50 + 808, size: random(5, 15), active: false },
-    { x: 1173, y: 50 + 1016, size: random(5, 15), active: false },
-    { x: 1245, y: 50 + 1073, size: random(5, 15), active: false },
-    { x: 1005, y: 50 + 1033, size: random(5, 15), active: false },
-    { x: 884, y: 50 + 1005, size: random(5, 15), active: false },
-    { x: 1392, y: 50 + 893, size: random(5, 15), active: false },
-    { x: 1327, y: 50 + 658, size: random(5, 15), active: false },
-    { x: 1494, y: 50 + 580, size: random(5, 15), active: false },
-    { x: 1478, y: 50 + 531, size: random(5, 15), active: false },
-    { x: 1506, y: 50 + 804, size: random(5, 15), active: false },
-    { x: 1645, y: 50 + 957, size: random(5, 15), active: false },
-    { x: 1371, y: 50 + 317, size: random(5, 15), active: false },
-    { x: 1455, y: 50 + 127, size: random(5, 15), active: false },
-    { x: 1608, y: 50 + 307, size: random(5, 15), active: false },
-    { x: 1575, y: 50 + 430, size: random(5, 15), active: false },
-    { x: 1735, y: 50 + 533, size: random(5, 15), active: false },
-    { x: 1660, y: 50 + 718, size: random(5, 15), active: false },
-    { x: 1795, y: 50 + 730, size: random(5, 15), active: false },
-    { x: 1962, y: 50 + 887, size: random(5, 15), active: false },
-    { x: 1974, y: 50 + 822, size: random(5, 15), active: false },
-    { x: 1995, y: 50 + 729, size: random(5, 15), active: false },
-    { x: 1932, y: 50 + 536, size: random(5, 15), active: false },
-    { x: 1834, y: 50 + 366, size: random(5, 15), active: false },
-    { x: 1894, y: 50 + 170, size: random(5, 15), active: false },
-    { x: 1693, y: 50 + 167, size: random(5, 15), active: false },
-    { x: 1637, y: 50 + 15, size: random(5, 15), active: false },
-    { x: 1721, y: 50 + 960, size: random(5, 15), active: false },
-    { x: 1759, y: 50 + -10, size: random(5, 15), active: false },
-    { x: 1890, y: 50 + -10, size: random(5, 15), active: false },
-    { x: 2000, y: 50 + 367, size: random(5, 15), active: false }
-  ];
-
-  createCanvas(windowWidth, windowHeight);
-
+  createCanvas(windowWidth, windowHeight - 18);
+  setupCircles();
   ellipseMode(RADIUS);
 
   noStroke();
@@ -56,10 +22,15 @@ function setup() {
   drawCircles();
 
   noStroke();
-
-  calculateLines();
 }
-var animPlay = false;
+
+function destroy() {
+  destroyPage = true;
+  var x = document.getElementById("destroyButton");
+  x.classList.add("pure-button-disabled");
+  x.classList.remove("pulse-red");
+}
+
 var index = 0;
 var originalX, originalY;
 function draw() {
@@ -77,6 +48,36 @@ function draw() {
   drawCircles();
 
   noStroke();
+  calculateLines();
+  if (destroyPage) {
+    for (i = 0; i < circles.length; i++) {
+      if (circles[i].y < windowHeight / 3) {
+        circles[i].y += random(6, 12);
+      } else if (
+        circles[i].y >= windowHeight / 3 &&
+        circles[i].y < (windowHeight / 3) * 2
+      ) {
+        circles[i].y += random(3, 5);
+      } else {
+        circles[i].y += random(2, 3);
+      }
+    }
+
+    var stillOnScreen = false;
+    for (i = 0; i < circles.length; i++) {
+      if (circles[i].y < windowHeight) {
+        stillOnScreen = true;
+      }
+    }
+
+    if (!stillOnScreen) {
+      destroyPage = false;
+      setupCircles();
+      var x = document.getElementById("destroyButton");
+      x.classList.remove("pure-button-disabled");
+      x.classList.add("pulse-red");
+    }
+  }
 }
 
 function drawCircles() {
@@ -219,4 +220,42 @@ function lineIntersect(x1, y1, x2, y2, x3, y3, x4, y4) {
     return true;
   }
   return false;
+}
+function setupCircles() {
+  circles = [
+    { x: 975, y: buffer + 769, size: random(5, 15), active: false },
+    { x: 1035, y: buffer + 829, size: random(5, 15), active: false },
+    { x: 1113, y: buffer + 742, size: random(5, 15), active: false },
+    { x: 795, y: buffer + 880, size: random(5, 15), active: false },
+    { x: 1242, y: buffer + 808, size: random(5, 15), active: false },
+    { x: 1173, y: buffer + 1016, size: random(5, 15), active: false },
+    { x: 1245, y: buffer + 1073, size: random(5, 15), active: false },
+    { x: 1005, y: buffer + 1033, size: random(5, 15), active: false },
+    { x: 884, y: buffer + 1005, size: random(5, 15), active: false },
+    { x: 1392, y: buffer + 893, size: random(5, 15), active: false },
+    { x: 1327, y: buffer + 658, size: random(5, 15), active: false },
+    { x: 1494, y: buffer + 580, size: random(5, 15), active: false },
+    { x: 1478, y: buffer + 531, size: random(5, 15), active: false },
+    { x: 1506, y: buffer + 804, size: random(5, 15), active: false },
+    { x: 1645, y: buffer + 957, size: random(5, 15), active: false },
+    { x: 1371, y: buffer + 317, size: random(5, 15), active: false },
+    { x: 1455, y: buffer + 127, size: random(5, 15), active: false },
+    { x: 1608, y: buffer + 307, size: random(5, 15), active: false },
+    { x: 1575, y: buffer + 430, size: random(5, 15), active: false },
+    { x: 1735, y: buffer + 533, size: random(5, 15), active: false },
+    { x: 1660, y: buffer + 718, size: random(5, 15), active: false },
+    { x: 1795, y: buffer + 730, size: random(5, 15), active: false },
+    { x: 1962, y: buffer + 887, size: random(5, 15), active: false },
+    { x: 1974, y: buffer + 822, size: random(5, 15), active: false },
+    { x: 1995, y: buffer + 729, size: random(5, 15), active: false },
+    { x: 1932, y: buffer + 536, size: random(5, 15), active: false },
+    { x: 1834, y: buffer + 366, size: random(5, 15), active: false },
+    { x: 1894, y: buffer + 170, size: random(5, 15), active: false },
+    { x: 1693, y: buffer + 167, size: random(5, 15), active: false },
+    { x: 1637, y: buffer + 15, size: random(5, 15), active: false },
+    { x: 1721, y: buffer + 960, size: random(5, 15), active: false },
+    { x: 1759, y: buffer + -10, size: random(5, 15), active: false },
+    { x: 1890, y: buffer + -10, size: random(5, 15), active: false },
+    { x: 2000, y: buffer + 367, size: random(5, 15), active: false }
+  ];
 }

@@ -3,8 +3,8 @@
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 /* .header {
   margin-top: 20px;
@@ -372,6 +372,22 @@ iframe {
   width: 8%;
   transition: width 0.2s ease;
 }
-.softwareIcon:hover {
-  width: 10%;
+
+#destroyButton {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+  background: rgb(202, 60, 60) !important;
+}
+
+.pulse-red {
+  animation: shadow-pulse 1s infinite;
+}
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255, 0, 0, 0);
+  }
 }
