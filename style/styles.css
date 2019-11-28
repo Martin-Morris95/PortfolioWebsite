@@ -378,7 +378,7 @@ iframe {
   #resume-sidePanel p {
     margin: auto;
   }
-  /* .PhoneBlocker {
+  .PhoneBlocker {
     display: block !important;
-  } */
+  }
 }
