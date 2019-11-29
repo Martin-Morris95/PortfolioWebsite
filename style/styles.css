@@ -292,7 +292,7 @@ iframe {
   transition: width 0.2s ease;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   #destroyButton {
     display: none;
   }
@@ -308,6 +308,7 @@ iframe {
   #homePageIntro > h1 {
     font-size: 35px;
     line-height: 1em;
+    color: red !important;
   }
   #aboutMe > p {
     width: 100% !important;
