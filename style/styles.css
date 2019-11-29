@@ -306,8 +306,7 @@ iframe {
     left: 10%;
   }
   #homePageIntro > h1 {
-    font-size: 45px;
-
+    font-size: 35px;
     line-height: 1em;
   }
   #aboutMe > p {
@@ -320,33 +319,10 @@ iframe {
     width: 100% !important;
   }
   #icon-container img {
-    width: 10%;
+    width: 7%;
+    height: 7%;
   }
-  #icon-container img {
-    overflow: hidden;
-  }
-}
 
-#destroyButton {
-  position: absolute;
-  top: 90%;
-  left: 2%;
-  background: rgb(202, 60, 60) !important;
-}
-
-.pulse-red {
-  animation: shadow-pulse 1s infinite;
-}
-@keyframes shadow-pulse {
-  0% {
-    box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 0 35px rgba(255, 0, 0, 0);
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .page-container-resume {
     margin: 2% 2%;
   }
@@ -380,6 +356,28 @@ iframe {
   #resume-sidePanel p {
     margin: auto;
   }
+}
+
+#destroyButton {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+  background: rgb(202, 60, 60) !important;
+}
+
+.pulse-red {
+  animation: shadow-pulse 1s infinite;
+}
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255, 0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
   /* .PhoneBlocker {
     display: block !important;
   } */
