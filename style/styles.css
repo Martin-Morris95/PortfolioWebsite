@@ -306,7 +306,9 @@ iframe {
     left: 10%;
   }
   #homePageIntro > h1 {
-    font-size: 65px;
+    font-size: 45px;
+
+    line-height: 1em;
   }
   #aboutMe > p {
     width: 100% !important;
@@ -378,7 +380,7 @@ iframe {
   #resume-sidePanel p {
     margin: auto;
   }
-  .PhoneBlocker {
+  /* .PhoneBlocker {
     display: block !important;
-  }
+  } */
 }
