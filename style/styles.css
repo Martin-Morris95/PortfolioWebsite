@@ -103,8 +103,8 @@ body {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #8acffc;
-  background-color: #8acffc;
+
+  background-color: #2d3e50;
   color: white;
 }
 
@@ -117,17 +117,17 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  width: 10%;
+  width: 33.33%;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #16679c;
+  background-color: #8acffc;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #16679c;
+  background-color: #8acffc;
 }
 
 /* Style the tab content */
@@ -233,6 +233,16 @@ body {
 }
 iframe {
   box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.76);
+}
+
+.websiteImages {
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.76);
+  width: 40%;
+}
+
+.websiteImages img {
+  width: 100%;
+  height: 100%;
 }
 .projectSlideshow {
   width: inherit;
@@ -362,7 +372,8 @@ iframe {
     margin-top: 0;
   }
   #contact-info-resume {
-    width: 40%;
+    width: 100%;
+    text-align: center;
   }
   .pure-g {
     letter-spacing: 0.1em;
@@ -378,4 +389,58 @@ iframe {
   .PhoneBlocker {
     display: block !important;
   }
+
+  .knowledgeButt {
+    width: 30%;
+  }
+  #resume-sidePanel {
+    display: block !important;
+    padding-bottom: 0;
+  }
+
+  #resume-sidePanel img {
+    display: block !important;
+    margin: auto;
+    margin-top: 1em;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #2d3e50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
