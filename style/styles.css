@@ -400,7 +400,12 @@ iframe {
   .PhoneBlocker {
     display: block !important;
   }
-
+  .page-container-resume {
+    padding: 2%;
+  }
+  .page-container {
+    margin: 1em;
+  }
   .knowledgeButt {
     width: 40%;
   }
