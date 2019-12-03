@@ -328,28 +328,38 @@ iframe {
   #icon-container {
     width: 90%;
   }
-
+  #defaultCanvas0 {
+    display: none;
+  }
   #homePageIntro {
-    position: absolute;
     top: 20%;
-    left: 10%;
+    left: 0;
   }
   #homePageIntro > h1 {
     font-size: 35px;
     line-height: 1em;
+    width: 100%;
+    text-align: center;
   }
   #aboutMe > p {
     width: 100% !important;
     font-size: 18px;
-    padding-right: 15%;
+    padding: 0% 10%;
     text-align: center;
   }
   #aboutMe {
     width: 100% !important;
   }
+
+  #icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
+    width: 100%;
+  }
+
   #icon-container img {
-    width: 7%;
-    height: 7%;
+    width: 18%;
   }
 
   .page-container-resume {
@@ -402,6 +412,12 @@ iframe {
     display: block !important;
     margin: auto;
     margin-top: 1em;
+  }
+
+  .backMobile {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
   }
 }
 
