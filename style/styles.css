@@ -408,12 +408,15 @@ iframe {
   }
   .knowledgeButt {
     width: 40%;
+    margin-bottom: 6%;
   }
   #resume-sidePanel {
     display: block !important;
     padding-bottom: 0;
   }
-
+  .home-menu i {
+    padding: 0;
+  }
   #resume-sidePanel img {
     display: block !important;
     margin: auto;
