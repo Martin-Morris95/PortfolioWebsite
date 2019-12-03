@@ -62,15 +62,42 @@
             <!-- Tab links -->
             <div class="tab">
 
-                <button class="tablinks active" onclick="openTab(event, 'Applications')">Applications</button>
+                <button class="tablinks" onclick="openTab(event, 'Applications')">Applications</button>
                 <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
-                <button class="tablinks" onclick="openTab(event, 'Websites')">Websites</button>
+                <button class="tablinks active" onclick="openTab(event, 'Websites')">Websites</button>
             </div>
 
             <!-- Tab content -->
-            <div id="Websites" class="tabcontent">
+            <div id="Websites" class="tabcontent"  style="display: block">
               
-
+                    <div class="project-container">
+                            <div class="project-description">
+                                    <h2 style ="margin-top: 0;">Holli Dolli</h2>
+                                     <strong>[HTML/CSS/JS] [UI/UX] [Shopify] </strong>
+                                     
+                                     <p>This is a website I created for a small clothing store located in Canungra called Holli Dolli. 
+                                         I used Shopify as the site needed to be made quickly and this also avoided reinventing the wheel 
+                                         if I was to go ahead and create my own cart system.
+                                        
+                                     </p>
+        
+                                     <p>I was pleased to find that shopify allowed me to create pages for the site in vanilla html/css/js 
+                                        and therefore gave me greater creative control over the custom pages (such as the about page).
+                                           
+                                        </p>
+                                 </div>
+                        <div class="websiteImages">
+                                <a href="https://www.HolliDolli.com.au/"target="_blank">
+                                    <div class="container">
+                                        <img src="img/websiteScreenshots/HollisWebsite.PNG" alt="Avatar" class="image" style="width:100%">
+                                        <div class="middle">
+                                            <div class="text">Visit Site</div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        
+                         </div>
                  <div class="project-container">
                     <div class="project-description">
                             <h2 style ="margin-top: 0;">Portfolio Website</h2>
@@ -98,34 +125,7 @@
                     </div>
                 </div>
 
-                <div class="project-container">
-                        <div class="project-description">
-                                <h2 style ="margin-top: 0;">Holli Dolli</h2>
-                                 <strong>[HTML/CSS/JS] [UI/UX] [Shopify] </strong>
-                                 
-                                 <p>This is a website I created for a small clothing store located in Canungra called Holli Dolli. 
-                                     I used Shopify as the site needed to be made quickly and this also avoided reinventing the wheel 
-                                     if I was to go ahead and create my own cart system.
-                                    
-                                 </p>
-    
-                                 <p>I was pleased to find that shopify allowed me to create pages for the site in vanilla html/css/js 
-                                    and therefore gave me greater creative control over the custom pages (such as the about page).
-                                       
-                                    </p>
-                             </div>
-                    <div class="websiteImages">
-                            <a href="https://www.HolliDolli.com.au/"target="_blank">
-                                <div class="container">
-                                    <img src="img/websiteScreenshots/HollisWebsite.PNG" alt="Avatar" class="image" style="width:100%">
-                                    <div class="middle">
-                                        <div class="text">Visit Site</div>
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                    
-                     </div>
+               
 
                        
                 <div class="project-container">
@@ -133,10 +133,7 @@
                               
                            <h2 style ="margin-top: 0;">Tamborine Driving School</h2>
                            <strong>[HTML/CSS] [Web hosting management] [WIX]</strong>
-                         
-                                   
-                            
-                            
+               
                             <p>This is a site I created for Tamborine Driving School when I just started website 
                                 development and was the first website I created for a business. I created the website 
                                 in Wix (website builder) due to the time constraint and needs of the customer. I did 
@@ -157,7 +154,7 @@
             </div>
            
       
-            <div id="Applications" class="tabcontent" style="display: block">
+            <div id="Applications" class="tabcontent">
                 
               <div id="applicationPanel">
                 <div class="tabSide">
@@ -410,7 +407,7 @@
                 
                      <div class="project-container">
 
-                   <iframe src="https://player.vimeo.com/video/144641475" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                   <iframe src="https://player.vimeo.com/video/144641475" class="gamesVid" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
                     <div class="project-description">
@@ -425,6 +422,7 @@
                 </div>
 
                 <div class="project-container">
+                        <iframe  class="gamesVid" width="640" height="360" src="https://www.youtube.com/embed/vLgj_k76BAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="project-description">
                                 <h2>University Games Showreel</h2>
                                 <strong>[C#] [Unity Engine] [PhotoShop] [Maya]</strong>
@@ -432,7 +430,7 @@
                                 </br>
                                
                             </div>
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/vLgj_k76BAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
                   
                 </div>
 

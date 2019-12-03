@@ -444,7 +444,7 @@ iframe {
     width: 100vw;
   }
   .container .middle {
-    opacity: 1 !important;
+    opacity: 1;
     transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     top: 0;
@@ -452,8 +452,21 @@ iframe {
   }
   .text {
     font-size: 12px;
-    padding: 8px 16px !important;
+    padding: 8px 16px;
   }
+  .gamesVid {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .content-head {
+    margin-top: 2em !important;
+  }
+}
+
+.gamesVid {
+  width: 640;
+  height: 360;
 }
 .container {
   position: relative;
