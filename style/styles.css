@@ -368,17 +368,7 @@ iframe {
 }
 /* Style the navigation menu */
 .topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  height: 65px;
-  top: 0;
-  width: 100%;
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  display: none;
-  z-index: 4;
+  display: none !important;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -443,6 +433,20 @@ iframe {
 }
 
 @media only screen and (max-width: 900px) {
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    height: 65px;
+    top: 0;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    z-index: 4;
+  }
   .pure-menu-item {
     font-size: 50%;
   }
@@ -615,6 +619,6 @@ iframe {
   }
 
   .footWeb {
-    display: none;
+    display: none !important;
   }
 }
