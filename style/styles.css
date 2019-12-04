@@ -368,6 +368,21 @@ iframe {
 }
 
 @media only screen and (max-width: 900px) {
+  .pure-menu-item {
+    font-size: 50%;
+  }
+  .pure-menu-heading {
+    font-size: 75% !important;
+  }
+  .home-menu i {
+    margin-left: 1em !important;
+  }
+  .home-menu {
+    text-align: start !important;
+  }
+  .home-menu ul {
+    float: right;
+  }
   #destroyButton {
     display: none;
   }
