@@ -596,7 +596,7 @@ iframe {
   }
 
   .content-head {
-    margin-top: 2em !important;
+    margin-top: 3.5em !important;
   }
 
   .tabSide {
@@ -612,5 +612,9 @@ iframe {
   }
   .topnav {
     display: block;
+  }
+
+  .footWeb {
+    display: none;
   }
 }
