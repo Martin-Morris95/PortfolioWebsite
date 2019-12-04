@@ -376,6 +376,7 @@ iframe {
   width: 100%;
   display: flex !important;
   align-items: center;
+  justify-content: space-between;
   display: none;
   z-index: 4;
 }
@@ -388,7 +389,7 @@ iframe {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 20px 22px;
+
   text-decoration: none;
   font-size: 17px;
   display: inline;
@@ -398,7 +399,8 @@ iframe {
 .topnav a.icon {
   background: black;
   display: block;
-  position: absolute;
+  padding: 6%;
+
   right: 0;
   top: 0;
 }
@@ -418,7 +420,7 @@ iframe {
 #myLinks {
   display: none;
   position: fixed;
-  top: 50px;
+  top: 65px;
   left: 0;
   width: 100%;
   z-index: 4;
@@ -433,6 +435,7 @@ iframe {
   font-size: 17px;
   margin: auto;
   text-align: center;
+  box-shadow: none;
 }
 
 #myLinks a:last-child {
