@@ -371,7 +371,7 @@ iframe {
   overflow: hidden;
   background-color: #333;
   position: fixed;
-  height: 50px;
+  height: 65px;
   top: 0;
   width: 100%;
   display: flex !important;
@@ -388,7 +388,7 @@ iframe {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 20px 22px;
   text-decoration: none;
   font-size: 17px;
   display: inline;
