@@ -36,6 +36,7 @@
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="style/marketing.css" />
     <script src="js/p5.js"></script>
+    <script src="js/script.js"></script>
     <!--<![endif]-->
   </head>
   <body>
@@ -44,6 +45,7 @@
       <h2 class="is-center">Please use a browser to view this site</h2>
       <h3 class="is-center">Sorry for the inconvience</h3>
     </div> -->
+
     <div class="header">
       <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <i
@@ -68,6 +70,26 @@
       </div>
     </div>
 
+    <div class="topnav">
+      <i
+        class="fa fa-terminal pure-menu-heading"
+        style=" color:white; padding-right:0px;"
+      ></i
+      ><a class="pure-menu-heading" href="Home.html" style="padding-left:2px;"
+        >Martin Morris</a
+      >
+      <!-- Navigation links (hidden by default) -->
+
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div id="myLinks">
+      <a href="Home.html">Home</a>
+      <a href="Knowledge.html">Knowledge</a>
+      <a href="projects.html">Projects</a>
+    </div>
     <!-- style="background-image: url('img/common/BackDropHome.png'); background-repeat: no-repeat; height:100%;background-size: cover;" -->
     <div
       class="backMobile"
@@ -103,6 +125,5 @@
       Clear Creation
     </button>
     <script src="js/sketch.js"></script>
-    <footer class="footer l-box is-center"></footer>
   </body>
 </html>
