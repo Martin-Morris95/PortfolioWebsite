@@ -5,6 +5,7 @@ html,
 body {
   margin: 0 !important;
   padding: 0 !important;
+  scroll-behavior: smooth;
 }
 /* .header {
   margin-top: 20px;
@@ -557,7 +558,9 @@ iframe {
   .home-menu i {
     padding: 0;
   }
-
+  #resume-buttons {
+    text-align: center;
+  }
   .project-container {
     display: block;
     margin-bottom: 15%;
@@ -571,7 +574,9 @@ iframe {
   .project-container > div {
     width: 100%;
   }
-
+  .knowledgeButt {
+    height: 45px;
+  }
   #resume-sidePanel img {
     display: block !important;
     margin: auto;

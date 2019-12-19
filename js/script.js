@@ -91,6 +91,7 @@ function openResume(evt) {
     x.classList.remove("rInActive");
     x.classList.add("rActive");
     button.innerHTML = "Hide ";
+    window.scrollBy(0, 400);
   } else {
     x.classList.add("rInActive");
     x.classList.remove("rActive");
