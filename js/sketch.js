@@ -259,3 +259,33 @@ function setupCircles() {
     { x: 2000, y: buffer + 367, size: random(5, 15), active: false }
   ];
 }
+/*
+function calculateLines(){
+  for( i = 1; i<circles.length; i++){
+    var buffer = random(2,10);
+     if(circles[i].x < circles[0].x){
+       if(circles[i].y < circles[0].y){
+         line(circles[i].x  , circles[i].y, circles[0].x- buffer,circles[0].y  - buffer);
+       }else if(circles[i].y > circles[0].y){
+       line(circles[i].x  , circles[i].y, circles[0].x- buffer,circles[0].y  + buffer);
+       }else{
+         line(circles[i].x  , circles[i].y, circles[0].x- buffer,circles[0].y );
+       }
+     }else if(circles[i].x > circles[0].x){
+        if(circles[i].y < circles[0].y){
+         line(circles[i].x  , circles[i].y, circles[0].x+ buffer,circles[0].y  - buffer);
+       }else if(circles[i].y > circles[0].y){
+       line(circles[i].x  , circles[i].y, circles[0].x + buffer,circles[0].y  + buffer);
+       }else{
+         line(circles[i].x  , circles[i].y, circles[0].x+ buffer,circles[0].y );
+       }
+     }else{
+        if(circles[i].y < circles[0].y){
+         line(circles[i].x  , circles[i].y, circles[0].x,circles[0].y  - buffer);
+       }else if(circles[i].y > circles[0].y){
+       line(circles[i].x  , circles[i].y, circles[0].x,circles[0].y  + buffer);
+     }
+      
+     }
+  }
+  } */
