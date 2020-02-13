@@ -143,7 +143,7 @@ function carouselHelpDesk() {
   x[slideIndex - 1].style.display = "block";
   HDto = setTimeout(carouselHelpDesk, 4000); // Change image every 2 seconds
 }
-
+//test
 var HDto2 = null;
 function carouselHelpDesk2() {
   if (HDto2) {
