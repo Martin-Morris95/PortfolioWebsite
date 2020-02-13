@@ -29,10 +29,14 @@ function openTabSide(evt, tabName) {
 
   if (tabName == "hdt") {
     carouselHelpDesk();
+  } else if (tabName == "hdt2") {
+    carouselHelpDesk2();
   } else if (tabName == "rla") {
     carouselRevitLib();
   } else if (tabName == "trt") {
     carouselTravel();
+  } else if (tabName == "sit") {
+    carouselSysInfo();
   }
 
   // Get all elements with class="tabcontent" and hide them
@@ -60,10 +64,14 @@ function openTabSideMob(evt, tabName) {
 
   if (tabName == "hdt") {
     carouselHelpDesk();
+  } else if (tabName == "hdt2") {
+    carouselHelpDesk2();
   } else if (tabName == "rla") {
     carouselRevitLib();
   } else if (tabName == "trt") {
     carouselTravel();
+  } else if (tabName == "sit") {
+    carouselSysInfo();
   }
 
   // Get all elements with class="tabcontent" and hide them
@@ -135,6 +143,26 @@ function carouselHelpDesk() {
   x[slideIndex - 1].style.display = "block";
   HDto = setTimeout(carouselHelpDesk, 4000); // Change image every 2 seconds
 }
+
+var HDto2 = null;
+function carouselHelpDesk2() {
+  if (HDto2) {
+    clearTimeout(HDto2);
+  }
+  var i;
+  var x = null;
+  x = document.getElementsByClassName("HD2Img");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
+  HDto2 = setTimeout(carouselHelpDesk2, 4000); // Change image every 2 seconds
+}
+
 var Travelto = null;
 function carouselTravel() {
   if (Travelto) {
@@ -152,6 +180,25 @@ function carouselTravel() {
   }
   x[slideIndex - 1].style.display = "block";
   Travelto = setTimeout(carouselTravel, 4000); // Change image every 2 seconds
+}
+
+var SysInfo = null;
+function carouselSysInfo() {
+  if (SysInfo) {
+    clearTimeout(SysInfo);
+  }
+  var i;
+  var x = null;
+  x = document.getElementsByClassName("sysImg");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
+  SysInfo = setTimeout(carouselSysInfo, 4000); // Change image every 2 seconds
 }
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
