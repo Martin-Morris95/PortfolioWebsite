@@ -1,1227 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Martin Morris Portfolio" />
-    <title>Martin Morris &ndash; Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
-      integrity="sha384-"
-      crossorigin="anonymous"
-    />
-    <link href="style/styles.css" rel="stylesheet" />
-    <!--[if lte IE 8]>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159294130-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159294130-1');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Martin Morris Portfolio" />
+  <title>Martin Morris &ndash; Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+    crossorigin="anonymous" />
+  <link href="style/styles.css" rel="stylesheet" />
+  <!--[if lte IE 8]>
       <link
         rel="stylesheet"
         href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css"
       />
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"
-    />
-    <!--<![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css" />
+  <!--<![endif]-->
 
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 
-    <!--[if lte IE 8]>
+  <!--[if lte IE 8]>
       <link rel="stylesheet" href="css/layouts/marketing-old-ie.css" />
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="style/marketing.css" />
-    <!--<![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="style/marketing.css" />
+  <!--<![endif]-->
 
-    <link
-      href="node_modules/lightbox2/dist/css/lightbox.min.css"
-      rel="stylesheet"
-    />
-    <script src="js/script.js"></script>
-  </head>
+  <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
+  <script src="js/script.js"></script>
+</head>
 
-  <body>
-    <div class="header">
-      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <i
-          class="fa fa-terminal pure-menu-heading"
-          style=" color:white; padding-right:0px;"
-        ></i
-        ><a class="pure-menu-heading" href="Home.html" style="padding-left:2px;"
-          >Martin Morris</a
-        >
+<body>
+  <div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <i class="fa fa-terminal pure-menu-heading" style=" color:white; padding-right:0px;"></i><a
+        class="pure-menu-heading" href="Home.html" style="padding-left:2px;">Martin Morris</a>
 
-        <ul class="pure-menu-list">
-          <li class="pure-menu-item ">
-            <a href="Home.html" class="pure-menu-link">About</a>
-          </li>
-          <li class="pure-menu-item ">
-            <a href="Knowledge.html" class="pure-menu-link">Knowledge</a>
-          </li>
-          <li class="pure-menu-item pure-menu-selected">
-            <a href="projects.html" class="pure-menu-link">Projects</a>
-          </li>
-        </ul>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item ">
+          <a href="Home.html" class="pure-menu-link">About</a>
+        </li>
+        <li class="pure-menu-item ">
+          <a href="Knowledge.html" class="pure-menu-link">Knowledge</a>
+        </li>
+        <li class="pure-menu-item pure-menu-selected">
+          <a href="projects.html" class="pure-menu-link">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <div>
+      <i class="fa fa-terminal pure-menu-heading" style=" color:white; padding-right:0px;"></i><a
+        class="pure-menu-heading" href="Home.html" style="padding-left:2px;">Martin Morris</a>
+    </div>
+
+    <!-- Navigation links (hidden by default) -->
+
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+  </div>
+  <div id="myLinks">
+    <a href="Home.html">Home</a>
+    <a href="Knowledge.html">Knowledge</a>
+    <a href="projects.html">Projects</a>
+  </div>
+
+  <div class="page-container">
+    <div class="content" style="padding-bottom: 1%;">
+      <h2 class="content-head" style="margin-top: 1em;">
+        Projects
+      </h2>
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Applications')">
+          Applications
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Games')">
+          Games
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Websites')">
+          Websites
+        </button>
       </div>
-    </div>
 
-    <div class="topnav">
-      <div>
-        <i
-          class="fa fa-terminal pure-menu-heading"
-          style=" color:white; padding-right:0px;"
-        ></i
-        ><a class="pure-menu-heading" href="Home.html" style="padding-left:2px;"
-          >Martin Morris</a
-        >
-      </div>
+      <!-- Tab content -->
+      <div id="Websites" class="tabcontent" style="display: block">
+        <div class="project-container">
+          <div class="project-description">
+            <h2 style="margin-top: 0;">Intranet</h2>
+            <strong>[.Net] [C#] [Razor] [HTML/CSS/JS] [UI/UX] </strong>
 
-      <!-- Navigation links (hidden by default) -->
+            <p>
+              This is the begining stages on a project to redevelop my works
+              intranet. It is a proof of concept showcasing new features to be
+              voted on and approved before full development takes place
+            </p>
 
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars fa-2x"></i>
-      </a>
-    </div>
-    <div id="myLinks">
-      <a href="Home.html">Home</a>
-      <a href="Knowledge.html">Knowledge</a>
-      <a href="projects.html">Projects</a>
-    </div>
-
-    <div class="page-container">
-      <div class="content" style="padding-bottom: 1%;">
-        <h2 class="content-head" style="margin-top: 1em;">
-          Projects
-        </h2>
-
-        <!-- Tab links -->
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'Applications')">
-            Applications
-          </button>
-          <button class="tablinks" onclick="openTab(event, 'Games')">
-            Games
-          </button>
-          <button class="tablinks active" onclick="openTab(event, 'Websites')">
-            Websites
-          </button>
+            <p>
+              I wanted to add personalisation to the new intranet and
+              therefore gave employees a customisable widget panel which they
+              can fill with there most used tools/gadgets. I also allow
+              employees to pick a colour scheme that best suits them. The goal
+              is to make the intranet more useful and pleasent to use as our
+              current site acts primarily as a document library/blog.
+            </p>
+          </div>
+          <div class="websiteImages">
+            <div class="container">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XP0FVYUUyNk?rel=0&vq=hd720p60"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
 
-        <!-- Tab content -->
-        <div id="Websites" class="tabcontent" style="display: block">
-          <div class="project-container">
-            <div class="project-description">
-              <h2 style="margin-top: 0;">Intranet</h2>
-              <strong>[.Net] [C#] [Razor] [HTML/CSS/JS] [UI/UX] </strong>
+        <div class="project-container">
+          <div class="project-description">
+            <h2 style="margin-top: 0;">Holli Dolli</h2>
+            <strong>[HTML/CSS/JS] [UI/UX] [Shopify] </strong>
 
-              <p>
-                This is the begining stages on a project to redevelop my works
-                intranet. It is a proof of concept showcasing new features to be
-                voted on and approved before full development takes place
-              </p>
+            <p>
+              This is a website I created for a small clothing store located
+              in Canungra called Holli Dolli. I used Shopify as the site
+              needed to be made quickly and this also avoided reinventing the
+              wheel if I was to go ahead and create my own cart system.
+            </p>
 
-              <p>
-                I wanted to add personalisation to the new intranet and
-                therefore gave employees a customisable widget panel which they
-                can fill with there most used tools/gadgets. I also allow
-                employees to pick a colour scheme that best suits them. The goal
-                is to make the intranet more useful and pleasent to use as our
-                current site acts primarily as a document library/blog.
-              </p>
-            </div>
-            <div class="websiteImages">
+            <p>
+              I was pleased to find that shopify allowed me to create pages
+              for the site in vanilla html/css/js and therefore gave me
+              greater creative control over the custom pages (such as the
+              about page).
+            </p>
+          </div>
+          <div class="websiteImages">
+            <a href="https://www.HolliDolli.com.au/" target="_blank">
               <div class="container">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/XP0FVYUUyNk?rel=0&vq=hd720p60"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                <img src="img/websiteScreenshots/HollisWebsite.PNG" alt="Avatar" class="image" style="width:100%" />
+                <div class="middle">
+                  <div class="text">Visit Site</div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+        </div>
+        <div class="project-container">
+          <div class="project-description">
+            <h2 style="margin-top: 0;">Portfolio Website</h2>
+            <strong>[HTML/CSS/JS] [p5.js] [Pure.CSS] [JQuery] [LightBox.js] [Git
+              Deployment] [Web hosting management]</strong>
 
-          <div class="project-container">
-            <div class="project-description">
-              <h2 style="margin-top: 0;">Holli Dolli</h2>
-              <strong>[HTML/CSS/JS] [UI/UX] [Shopify] </strong>
+            <p>
+              My portfolio site was by far the most enjoyable to make. I set
+              out to include as many libraries and plugins as I could. I did
+              this not only to showcase my proficiency in such technologies
+              but to primarily make my website more engaging and interesting.
+            </p>
 
-              <p>
-                This is a website I created for a small clothing store located
-                in Canungra called Holli Dolli. I used Shopify as the site
-                needed to be made quickly and this also avoided reinventing the
-                wheel if I was to go ahead and create my own cart system.
-              </p>
-
-              <p>
-                I was pleased to find that shopify allowed me to create pages
-                for the site in vanilla html/css/js and therefore gave me
-                greater creative control over the custom pages (such as the
-                about page).
-              </p>
-            </div>
-            <div class="websiteImages">
-              <a href="https://www.HolliDolli.com.au/" target="_blank">
-                <div class="container">
-                  <img
-                    src="img/websiteScreenshots/HollisWebsite.PNG"
-                    alt="Avatar"
-                    class="image"
-                    style="width:100%"
-                  />
-                  <div class="middle">
-                    <div class="text">Visit Site</div>
-                  </div>
-                </div>
-              </a>
-            </div>
+            <p>
+              Initially my home page was a static image quite like the one you
+              see now, I found this quite boring as it lacked any form of
+              ‘Wow’ factor.
+              <i>(If you haven’t found the hidden feature on the home page yet
+                go and try clicking around or dragging the white dots)</i>. I therefore added a hidden dynamic
+              background using the p5.js
+              library (which I had never used before) to make my site more
+              engaging whilst also showcasing my technical ability to learn
+              new libraries from scratch.
+            </p>
           </div>
-          <div class="project-container">
-            <div class="project-description">
-              <h2 style="margin-top: 0;">Portfolio Website</h2>
-              <strong
-                >[HTML/CSS/JS] [p5.js] [Pure.CSS] [JQuery] [LightBox.js] [Git
-                Deployment] [Web hosting management]</strong
-              >
-
-              <p>
-                My portfolio site was by far the most enjoyable to make. I set
-                out to include as many libraries and plugins as I could. I did
-                this not only to showcase my proficiency in such technologies
-                but to primarily make my website more engaging and interesting.
-              </p>
-
-              <p>
-                Initially my home page was a static image quite like the one you
-                see now, I found this quite boring as it lacked any form of
-                ‘Wow’ factor.
-                <i
-                  >(If you haven’t found the hidden feature on the home page yet
-                  go and try clicking around or dragging the white dots)</i
-                >. I therefore added a hidden dynamic background using the p5.js
-                library (which I had never used before) to make my site more
-                engaging whilst also showcasing my technical ability to learn
-                new libraries from scratch.
-              </p>
-            </div>
-            <div class="websiteImages">
-              <a href="#">
-                <div class="container">
-                  <img
-                    src="img/websiteScreenshots/myWebsite.PNG"
-                    alt="Avatar"
-                    class="image"
-                    style="width:100%"
-                  />
-                  <div class="middle">
-                    <div class="text">Already Here</div>
-                  </div>
+          <div class="websiteImages">
+            <a href="#">
+              <div class="container">
+                <img src="img/websiteScreenshots/myWebsite.PNG" alt="Avatar" class="image" style="width:100%" />
+                <div class="middle">
+                  <div class="text">Already Here</div>
                 </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-container">
-            <div class="project-description">
-              <h2 style="margin-top: 0;">Tamborine Driving School</h2>
-              <strong>[HTML/CSS] [Web hosting management] [WIX]</strong>
-
-              <p>
-                This is a site I created for Tamborine Driving School when I
-                just started website development and was the first website I
-                created for a business. I created the website in Wix (website
-                builder) due to the time constraint and needs of the customer. I
-                did have plans to recreate the site with vanilla html/css/js,
-                however the website hosting fees end up costing more than the
-                Wix subscription and therefore will be left alone
-              </p>
-            </div>
-            <div class="websiteImages">
-              <a href="https://www.tamborinedrivingschool.com/" target="_blank">
-                <div class="container">
-                  <img
-                    src="img/websiteScreenshots/tamborineDrivingSchool.PNG"
-                    alt="Avatar"
-                    class="image"
-                    style="width:100%"
-                  />
-                  <div class="middle">
-                    <div class="text">Visit Site</div>
-                  </div>
-                </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
 
-        <div id="Games" class="tabcontent">
-          <div class="project-container">
-            <iframe
-              src="https://player.vimeo.com/video/144641475"
-              class="gamesVid"
-              width="640"
-              height="360"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
-            ></iframe>
+        <div class="project-container">
+          <div class="project-description">
+            <h2 style="margin-top: 0;">Tamborine Driving School</h2>
+            <strong>[HTML/CSS] [Web hosting management] [WIX]</strong>
 
-            <div class="project-description">
-              <h2>ChronoDash - Final Project Game Trailer</h2>
-              <strong>[C#] [Unity Engine]</strong>
-              <p>
-                Third year game project completed at Griffith University.
-                Chronodash is a four player champion battle racer were players
-                must utilise there characters unique abilities to gain the
-                advantage in a race against time.
-              </p>
-
-              <p>
-                I was a part of a five man team which included two programmers,
-                two 3D artists and a designer. Together we worked on this
-                project for our final year project which won the peoples choice
-                award at the showcase ceremony
-              </p>
-            </div>
+            <p>
+              This is a site I created for Tamborine Driving School when I
+              just started website development and was the first website I
+              created for a business. I created the website in Wix (website
+              builder) due to the time constraint and needs of the customer. I
+              did have plans to recreate the site with vanilla html/css/js,
+              however the website hosting fees end up costing more than the
+              Wix subscription and therefore will be left alone
+            </p>
           </div>
-
-          <div class="project-container">
-            <iframe
-              class="gamesVid"
-              width="640"
-              height="360"
-              src="https://www.youtube.com/embed/vLgj_k76BAA"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div class="project-description">
-              <h2>University Games Showreel</h2>
-              <strong>[C#] [Unity Engine] [PhotoShop] [Maya]</strong>
-              <p>
-                A showreel created halfway through my last year of my Games
-                Design Bachelor. Although it showcases some early work which is
-                a bit "rough around the edges" I believe it is an important
-                piece to showcase as it shows not only my work but also how I
-                improved throughout my degree.
-              </p>
-            </div>
+          <div class="websiteImages">
+            <a href="https://www.tamborinedrivingschool.com/" target="_blank">
+              <div class="container">
+                <img src="img/websiteScreenshots/tamborineDrivingSchool.PNG" alt="Avatar" class="image"
+                  style="width:100%" />
+                <div class="middle">
+                  <div class="text">Visit Site</div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-        <div id="Applications" class="tabcontent">
-          <div id="applicationPanel">
-            <div class="tabSide">
-              <button class="tablinksSide" onclick="openTabSide(event, 'hdt')">
-                Help Desk Tool
-              </button>
-              <button class="tablinksSide" onclick="openTabSide(event, 'hdt2')">
-                Help Desk Tool V2
-              </button>
-              <button class="tablinksSide" onclick="openTabSide(event, 'sit')">
-                System Info Tool
-              </button>
-              <button class="tablinksSide" onclick="openTabSide(event, 'rla')">
-                Revit Addin
-              </button>
-              <button class="tablinksSide" onclick="openTabSide(event, 'trt')">
-                Travel Request
-              </button>
+      </div>
+
+      <div id="Games" class="tabcontent">
+        <div class="project-container">
+          <iframe src="https://player.vimeo.com/video/144641475" class="gamesVid" width="640" height="360"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+          <div class="project-description">
+            <h2>ChronoDash - Final Project Game Trailer</h2>
+            <strong>[C#] [Unity Engine]</strong>
+            <p>
+              Third year game project completed at Griffith University.
+              Chronodash is a four player champion battle racer were players
+              must utilise there characters unique abilities to gain the
+              advantage in a race against time.
+            </p>
+
+            <p>
+              I was a part of a five man team which included two programmers,
+              two 3D artists and a designer. Together we worked on this
+              project for our final year project which won the peoples choice
+              award at the showcase ceremony
+            </p>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <iframe class="gamesVid" width="640" height="360" src="https://www.youtube.com/embed/vLgj_k76BAA"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="project-description">
+            <h2>University Games Showreel</h2>
+            <strong>[C#] [Unity Engine] [PhotoShop] [Maya]</strong>
+            <p>
+              A showreel created halfway through my last year of my Games
+              Design Bachelor. Although it showcases some early work which is
+              a bit "rough around the edges" I believe it is an important
+              piece to showcase as it shows not only my work but also how I
+              improved throughout my degree.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="Applications" class="tabcontent">
+        <div id="applicationPanel">
+          <div class="tabSide">
+            <button class="tablinksSide" onclick="openTabSide(event, 'hdt')">
+              Help Desk Tool
+            </button>
+            <button class="tablinksSide" onclick="openTabSide(event, 'hdt2')">
+              Help Desk Tool V2
+            </button>
+            <button class="tablinksSide" onclick="openTabSide(event, 'sit')">
+              System Info Tool
+            </button>
+            <button class="tablinksSide" onclick="openTabSide(event, 'rla')">
+              Revit Addin
+            </button>
+            <button class="tablinksSide" onclick="openTabSide(event, 'trt')">
+              Travel Request
+            </button>
+          </div>
+
+          <div id="hdt" class="tabcontentSide" style="display: none;">
+            <div class="appProjHeader">
+              <h2>Help Desk Notes Tool</h2>
+              <p>
+                <b>[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [LINQ]</b>
+              </p>
             </div>
 
-            <div id="hdt" class="tabcontentSide" style="display: none;">
-              <div class="appProjHeader">
-                <h2>Help Desk Notes Tool</h2>
-                <p>
-                  <b>[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [LINQ]</b>
-                </p>
+            <div class="appSlideshowContainer">
+              <div class="slideshow">
+                <a class="slideshowLinks HDImg" href="img/slideshow/Helpdesk1.PNG" data-lightbox="Notes App"
+                  data-title="Home Page of the app showcasing all the notes"><img class="projectSlideshow"
+                    src="img/slideshow/Helpdesk1.PNG" alt="" /></a>
+                <a class="slideshowLinks HDImg" href="img/slideshow/Helpdesk2.PNG" data-lightbox="Notes App"
+                  data-title="Example of a Note"><img class="projectSlideshow" src="img/slideshow/Helpdesk2.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks HDImg" href="img/slideshow/Helpdesk3.PNG" data-lightbox="Notes App"
+                  data-title="The Upload feature allows the user to generate a note template, tag and leave a description"><img
+                    class="projectSlideshow" src="img/slideshow/Helpdesk3.PNG" alt="" /></a>
+                <a class="slideshowLinks HDImg" href="img/slideshow/Helpdesk4.PNG" data-lightbox="Notes App"
+                  data-title="Note template that is generated for the user"><img class="projectSlideshow"
+                    src="img/slideshow/Helpdesk4.PNG" alt="" /></a>
               </div>
+              <div class="appFeatures">
+                <h3>Features</h3>
+                <ul>
+                  <li>
+                    Upload work related job notes to database
+                  </li>
+                  <li>
+                    Word template generation for new notes to ensure
+                    harmonious design/style
+                  </li>
+                  <li>
+                    Search functionality with tags and title
+                  </li>
+                  <li>
+                    Caters for multiple users
+                  </li>
+                  <li>
+                    Compiles all notes in one easy to access location
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="appStory">
+              <p>
+                This was the first application I made upon starting my new job
+                as an IT Support Officer. The idea came about when I was being
+                trained alongside another employee. As you could expect each
+                of us had many questions and we would write down the answers
+                in our notebooks. This became messy quickly and made finding
+                the answers to problems a lengthy process. We also began
+                asking the same questions repeatedly as we both worked
+                different days.
+              </p>
+              <p>
+                I realised we needed an efficient way to compile our
+                knowledge, allow us to share notes, tips and tricks whilst
+                storing them securely so the tool can be used by future new
+                employees giving the company an easier way to train my role
+                for the future.
+              </p>
+              <p>
+                I created the application in Visual studio using C# and WPF.
+                The application allows users to generate a note template
+                (which opens word automatically), they then add searchable
+                tags and a description and then upload it to the database. All
+                the IT team can then open the app and search for that note.
+              </p>
+            </div>
+          </div>
 
-              <div class="appSlideshowContainer">
-                <div class="slideshow">
-                  <a
-                    class="slideshowLinks HDImg"
-                    href="img/slideshow/Helpdesk1.PNG"
-                    data-lightbox="Notes App"
-                    data-title="Home Page of the app showcasing all the notes"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Helpdesk1.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks HDImg"
-                    href="img/slideshow/Helpdesk2.PNG"
-                    data-lightbox="Notes App"
-                    data-title="Example of a Note"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Helpdesk2.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks HDImg"
-                    href="img/slideshow/Helpdesk3.PNG"
-                    data-lightbox="Notes App"
-                    data-title="The Upload feature allows the user to generate a note template, tag and leave a description"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Helpdesk3.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks HDImg"
-                    href="img/slideshow/Helpdesk4.PNG"
-                    data-lightbox="Notes App"
-                    data-title="Note template that is generated for the user"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Helpdesk4.PNG"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="appFeatures">
-                  <h3>Features</h3>
-                  <ul>
-                    <li>
-                      Upload work related job notes to database
-                    </li>
-                    <li>
-                      Word template generation for new notes to ensure
-                      harmonious design/style
-                    </li>
-                    <li>
-                      Search functionality with tags and title
-                    </li>
-                    <li>
-                      Caters for multiple users
-                    </li>
-                    <li>
-                      Compiles all notes in one easy to access location
-                    </li>
-                  </ul>
-                </div>
+          <div id="hdt2" class="tabcontentSide" style="display: none;">
+            <div class="appProjHeader">
+              <h2>Help Desk Notes Tool V2</h2>
+              <p>
+                <b>[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [LINQ]</b>
+              </p>
+            </div>
+
+            <div class="appSlideshowContainer" style="height:25% !important;">
+              <iframe width="40%" src="https://www.youtube.com/embed/7IAP9pP58S8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="appFeatures">
+                <h3>Changes</h3>
+                <ul>
+                  <li>
+                    Can now edit every file
+                  </li>
+                  <li>
+                    All fetaures contained in one window
+                  </li>
+                  <li>
+                    Search by category, tags and name
+                  </li>
+                  <li>
+                    New colour scheme
+                  </li>
+                  <li>
+                    New UI
+                  </li>
+                </ul>
               </div>
+            </div>
+
+            <div class="appSlideshowContainer">
               <div class="appStory">
                 <p>
-                  This was the first application I made upon starting my new job
-                  as an IT Support Officer. The idea came about when I was being
-                  trained alongside another employee. As you could expect each
-                  of us had many questions and we would write down the answers
-                  in our notebooks. This became messy quickly and made finding
-                  the answers to problems a lengthy process. We also began
-                  asking the same questions repeatedly as we both worked
-                  different days.
+                  After two years in my role I decided to redo the Help Desk
+                  Notes from scratch. This time utilizing my New found
+                  knowledge and experience. I believe the difference between
+                  the versions perfectly showcases how my skills have
+                  developed and improved since first starting my role.
                 </p>
                 <p>
-                  I realised we needed an efficient way to compile our
-                  knowledge, allow us to share notes, tips and tricks whilst
-                  storing them securely so the tool can be used by future new
-                  employees giving the company an easier way to train my role
-                  for the future.
+                  The most notable upgrade to the tool is the ability to now
+                  edit the notes. This was a feature I wanted to add for quite
+                  soemtime however just couldnt find the time to implement it.
+                  This now allows the notes to stay up to date and using a
+                  much less tedious process which used to conist of removing
+                  the notes from the database manually and then reuploading
+                  the revised version.
                 </p>
-                <p>
-                  I created the application in Visual studio using C# and WPF.
-                  The application allows users to generate a note template
-                  (which opens word automatically), they then add searchable
-                  tags and a description and then upload it to the database. All
-                  the IT team can then open the app and search for that note.
-                </p>
+              </div>
+              <div class="slideshow">
+                <a class="slideshowLinks HD2Img" href="img/slideshow/hd2-1.PNG" data-lightbox="HelpDeskV2"
+                  data-title="New and improved helpdesk notes tool"><img class="projectSlideshow"
+                    src="img/slideshow/hd2-1.PNG" alt="" /></a>
+                <a class="slideshowLinks HD2Img" href="img/slideshow/hd2-2.PNG" data-lightbox="HelpDeskV2"
+                  data-title="New and improved helpdesk notes tool"><img class="projectSlideshow"
+                    src="img/slideshow/hd2-2.PNG" alt="" /></a>
+                <a class="slideshowLinks HD2Img" href="img/slideshow/hd2-3.PNG" data-lightbox="HelpDeskV2"
+                  data-title="New and improved helpdesk notes tool"><img class="projectSlideshow"
+                    src="img/slideshow/hd2-3.PNG" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="sit" class="tabcontentSide" style="display: none;">
+            <div class="appProjHeader">
+              <h2>System Info Tool</h2>
+              <p>
+                <b>[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [UI] [UX]</b>
+              </p>
+            </div>
+
+            <div class="appSlideshowContainer">
+              <div class="slideshowLong">
+                <a class="slideshowLinks sysImg" href="img/slideshow/Sysinfo1.PNG" data-lightbox="sysInfo App"
+                  data-title="New System info tool"><img class="projectSlideshow" src="img/slideshow/Sysinfo1.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks sysImg" href="img/slideshow/Sysinfo2.PNG" data-lightbox="sysInfo App"
+                  data-title="Computer Information is now opened using a toggle button"><img class="projectSlideshow"
+                    src="img/slideshow/Sysinfo2.PNG" alt="" /></a>
+                <a class="slideshowLinks sysImg" href="img/slideshow/Sysinfo3.PNG" data-lightbox="sysInfo App"
+                  data-title="Old vs new alert banners"><img class="projectSlideshow" src="img/slideshow/Sysinfo3.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks sysImg" href="img/slideshow/Sysinfo4.PNG" data-lightbox="sysInfo App"
+                  data-title="Old System info tool"><img class="projectSlideshow" src="img/slideshow/Sysinfo4.PNG"
+                    alt="" /></a>
+              </div>
+              <div class="appFeatures">
+                <h3>Features</h3>
+                <ul>
+                  <li>
+                    Tracks computers performance
+                  </li>
+                  <li>
+                    Gathers information about each computer in the company and
+                    stores it in a Database
+                  </li>
+                  <li>
+                    Detects when a users password is about to expire and sends
+                    them a personalised email 7 and 3 days prior. (Also takes
+                    into consideration if this day falls on a weekend and will
+                    warn you earlier otherwise)
+                  </li>
+                  <li>
+                    Warns users of timed events (temp drive erase, password
+                    expiry, computer uptime, time sheet status)
+                  </li>
+                  <li>
+                    Allows for quick creation of a helpdesk ticket.
+                  </li>
+                  <li>
+                    Update users outlook signature, launch timesheet portal,
+                    reveal utility account password and view system
+                    information
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="appStory">
+              <i style="color:red;">
+                Disclaimer: I only worked on the front end of this project.
+                All data gathering logic, utility password generation and
+                signature update was done prior to my contribution to the
+                project
+              </i>
+              <p>
+                The system info tool was initialy created to gather data for
+                each computer user, RAM, GPU, CPU, etc. This allowed IT to
+                compile a computer list that we could access and instantly
+                know who was using which machine and its specs. The tool also
+                displayed realtime CPU, RAM, and storage performance which
+                allowed the support team to quickly see if a computer had any
+                performance issues.
+              </p>
+              <p>
+                After sometime working at the company that had created and
+                deployed this tool I noticed that no one paid attention to the
+                tool and I believed we could rework the front end to be more
+                pleasent and engaging for employees whilst also maintaing the
+                functionality the tool was intended for.
+              </p>
+              <p>
+                I started off with removing all the data that the employees
+                wouldnt want to see/care about and moved it to its own
+                seperate window (see image 2). This freed up alot of space and
+                made the tool less cluttered. I then emphasized important
+                information such as the IP address, computer name and current
+                user name as these are three things we mostly ask for when
+                offering remote help via the phone. I then reworked the alert
+                system banner (see Image 3) to be more obvious and eye
+                catching. This is an attempt to stop users missing there
+                password resets and temp drive erase dates. Lastly I added a
+                whole new section labeled IT Help Desk. This section allows
+                for an automated email template to be generated to send
+                helpdesk tickets and also includes the help desks contact
+                number. This was done in an attempt to lower the amount of
+                direct calls the head of IT recieves for trivial helpdesk
+                level jobs.
+              </p>
+
+              <p>
+                As our employees tend to work remotely/out in the field
+                expired passwords can become quite a hassle if they have not
+                reset them prior to the lock out date. As this happens quite
+                alot I incorporated a password expiry checker that will alert
+                the user via an automated email 7 and 3 days prior to it
+                expiring with instructions on how to do so. This along with
+                the new and improved alert banner system I hope to lower the
+                password lockout cases.
+              </p>
+            </div>
+          </div>
+
+          <div id="rla" class="tabcontentSide" style="display: none;">
+            <div class="appProjHeader">
+              <h2>Revit Library Addin</h2>
+              <p>
+                <b>
+                  [C#] [.Net] [Visual Studio] [Windows Forms] [SQL] [LINQ]
+                  [Revit API]
+                </b>
+              </p>
+            </div>
+
+            <div class="appSlideshowContainer">
+              <iframe width="40%" src="https://www.youtube.com/embed/Bl_KFkfzweg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="appFeatures">
+                <h3>Features</h3>
+                <ul>
+                  <li>
+                    Revit Addin with various tools
+                  </li>
+                  <li>
+                    Tool 1: Revit Library - Allows users to import family
+                    models into revit
+                    <ul>
+                      <li>
+                        Search by name, category or both
+                      </li>
+                      <li>
+                        Request model upload to Database managed by Revit
+                        Admins
+                      </li>
+                      <li>
+                        Request Audit of models to Revit Admins
+                      </li>
+                      <li>
+                        Easily see family details with quick info tab upon
+                        clicking
+                      </li>
+                      <li>
+                        Multiple display options
+                      </li>
+                      <li>
+                        Ability to search and add tags
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Tool 2: Auto save feature with variable timer
+                  </li>
+                  <li>
+                    Tool 3: Upload families to Database (Only avaliable to
+                    Revit Admins)
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div id="hdt2" class="tabcontentSide" style="display: none;">
-              <div class="appProjHeader">
-                <h2>Help Desk Notes Tool V2</h2>
-                <p>
-                  <b>[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [LINQ]</b>
-                </p>
-              </div>
-
-              <div class="appSlideshowContainer" style="height:25% !important;">
-                <iframe
-                  width="40%"
-                  src="https://www.youtube.com/embed/7IAP9pP58S8"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <div class="appFeatures">
-                  <h3>Changes</h3>
-                  <ul>
-                    <li>
-                      Can now edit every file
-                    </li>
-                    <li>
-                      All fetaures contained in one window
-                    </li>
-                    <li>
-                      Search by category, tags and name
-                    </li>
-                    <li>
-                      New colour scheme
-                    </li>
-                    <li>
-                      New UI
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="appSlideshowContainer">
-                <div class="appStory">
-                  <p>
-                    After two years in my role I decided to redo the Help Desk
-                    Notes from scratch. This time utilizing my New found
-                    knowledge and experience. I believe the difference between
-                    the versions perfectly showcases how my skills have
-                    developed and improved since first starting my role.
-                  </p>
-                  <p>
-                    The most notable upgrade to the tool is the ability to now
-                    edit the notes. This was a feature I wanted to add for quite
-                    soemtime however just couldnt find the time to implement it.
-                    This now allows the notes to stay up to date and using a
-                    much less tedious process which used to conist of removing
-                    the notes from the database manually and then reuploading
-                    the revised version.
-                  </p>
-                </div>
-                <div class="slideshow">
-                  <a
-                    class="slideshowLinks HD2Img"
-                    href="img/slideshow/hd2-1.PNG"
-                    data-lightbox="HelpDeskV2"
-                    data-title="New and improved helpdesk notes tool"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/hd2-1.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks HD2Img"
-                    href="img/slideshow/hd2-2.PNG"
-                    data-lightbox="HelpDeskV2"
-                    data-title="New and improved helpdesk notes tool"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/hd2-2.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks HD2Img"
-                    href="img/slideshow/hd2-3.PNG"
-                    data-lightbox="HelpDeskV2"
-                    data-title="New and improved helpdesk notes tool"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/hd2-3.PNG"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-
-            <div id="sit" class="tabcontentSide" style="display: none;">
-              <div class="appProjHeader">
-                <h2>System Info Tool</h2>
-                <p>
-                  <b
-                    >[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [UI] [UX]</b
-                  >
-                </p>
-              </div>
-
-              <div class="appSlideshowContainer">
-                <div class="slideshowLong">
-                  <a
-                    class="slideshowLinks sysImg"
-                    href="img/slideshow/Sysinfo1.PNG"
-                    data-lightbox="sysInfo App"
-                    data-title="New System info tool"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Sysinfo1.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks sysImg"
-                    href="img/slideshow/Sysinfo2.PNG"
-                    data-lightbox="sysInfo App"
-                    data-title="Computer Information is now opened using a toggle button"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Sysinfo2.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks sysImg"
-                    href="img/slideshow/Sysinfo3.PNG"
-                    data-lightbox="sysInfo App"
-                    data-title="Old vs new alert banners"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Sysinfo3.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks sysImg"
-                    href="img/slideshow/Sysinfo4.PNG"
-                    data-lightbox="sysInfo App"
-                    data-title="Old System info tool"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/Sysinfo4.PNG"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="appFeatures">
-                  <h3>Features</h3>
-                  <ul>
-                    <li>
-                      Tracks computers performance
-                    </li>
-                    <li>
-                      Gathers information about each computer in the company and
-                      stores it in a Database
-                    </li>
-                    <li>
-                      Detects when a users password is about to expire and sends
-                      them a personalised email 7 and 3 days prior. (Also takes
-                      into consideration if this day falls on a weekend and will
-                      warn you earlier otherwise)
-                    </li>
-                    <li>
-                      Warns users of timed events (temp drive erase, password
-                      expiry, computer uptime, time sheet status)
-                    </li>
-                    <li>
-                      Allows for quick creation of a helpdesk ticket.
-                    </li>
-                    <li>
-                      Update users outlook signature, launch timesheet portal,
-                      reveal utility account password and view system
-                      information
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="appSlideshowContainer">
               <div class="appStory">
-                <i style="color:red;">
-                  Disclaimer: I only worked on the front end of this project.
-                  All data gathering logic, utility password generation and
-                  signature update was done prior to my contribution to the
-                  project
-                </i>
                 <p>
-                  The system info tool was initialy created to gather data for
-                  each computer user, RAM, GPU, CPU, etc. This allowed IT to
-                  compile a computer list that we could access and instantly
-                  know who was using which machine and its specs. The tool also
-                  displayed realtime CPU, RAM, and storage performance which
-                  allowed the support team to quickly see if a computer had any
-                  performance issues.
+                  This app was created whilst working at an Architecture firm
+                  were the staff were using a program called Unifi. Unifi
+                  acted as a centralized point to store Revit Families that
+                  could then be imported into projects
                 </p>
                 <p>
-                  After sometime working at the company that had created and
-                  deployed this tool I noticed that no one paid attention to the
-                  tool and I believed we could rework the front end to be more
-                  pleasent and engaging for employees whilst also maintaing the
-                  functionality the tool was intended for.
-                </p>
-                <p>
-                  I started off with removing all the data that the employees
-                  wouldnt want to see/care about and moved it to its own
-                  seperate window (see image 2). This freed up alot of space and
-                  made the tool less cluttered. I then emphasized important
-                  information such as the IP address, computer name and current
-                  user name as these are three things we mostly ask for when
-                  offering remote help via the phone. I then reworked the alert
-                  system banner (see Image 3) to be more obvious and eye
-                  catching. This is an attempt to stop users missing there
-                  password resets and temp drive erase dates. Lastly I added a
-                  whole new section labeled IT Help Desk. This section allows
-                  for an automated email template to be generated to send
-                  helpdesk tickets and also includes the help desks contact
-                  number. This was done in an attempt to lower the amount of
-                  direct calls the head of IT recieves for trivial helpdesk
-                  level jobs.
+                  The licencing contracts for the software were coming to an
+                  end and the company was not wanting to renew the lengthy
+                  lock in contract. I was tasked to create a similar
+                  application with a strict timeline as the licences were soon
+                  to expire. I created a Beta version of my Revit Tools within
+                  three days that allowed the Architects to continue there
+                  work whilst I continued to upgrade and maintain the software
+                  by pushing out patches via Group Policy
                 </p>
 
                 <p>
-                  As our employees tend to work remotely/out in the field
-                  expired passwords can become quite a hassle if they have not
-                  reset them prior to the lock out date. As this happens quite
-                  alot I incorporated a password expiry checker that will alert
-                  the user via an automated email 7 and 3 days prior to it
-                  expiring with instructions on how to do so. This along with
-                  the new and improved alert banner system I hope to lower the
-                  password lockout cases.
+                  As time went on employees began requesting additional
+                  features such as an Auto Save feature and an Admin upload
+                  panel. I ensured that the program would allow for such
+                  scale-ability and therefore became a platform for any
+                  additional features the copmany may desire.
                 </p>
+              </div>
+              <div class="slideshow">
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary1.PNG" data-lightbox="Revit Addin"
+                  data-title="Revit Addin showcasing all three tools"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary1.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary2.PNG" data-lightbox="Revit Addin"
+                  data-title="Start up view of the Revit Library"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary2.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary3.PNG" data-lightbox="Revit Addin"
+                  data-title="Example of a search by category."><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary3.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary4.PNG" data-lightbox="Revit Addin"
+                  data-title="Quick info panel. Also contains section to send an audit request"><img
+                    class="projectSlideshow" src="img/slideshow/revitLibrary4.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary5.PNG" data-lightbox="Revit Addin"
+                  data-title="Switching to Grid view"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary5.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary6.PNG" data-lightbox="Revit Addin"
+                  data-title="Option to import multiple families at once"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary6.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary7.PNG" data-lightbox="Revit Addin"
+                  data-title="User specific favourites tab"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary7.PNG" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="rla" class="tabcontentSide" style="display: none;">
+            <div class="appProjHeader">
+              <h2>Revit Library Addin</h2>
+              <p>
+                <b>[C#] [.Net] [Visual Studio] [Windows Forms] [SQL] [LINQ]
+                  [Revit API]</b>
+              </p>
+            </div>
+            <div class="appSlideshowContainer">
+              <iframe width="40%" src="https://www.youtube.com/embed/WEwvZd9MpHE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="appFeatures">
+                <h3>Features</h3>
+                <ul>
+                  <li>
+                    Revit Addin with various tools
+                  </li>
+                  <li>
+                    Tool 1: Revit Library - Allows users to import family
+                    models into revit
+                    <ul>
+                      <li>
+                        Search by name, category or both
+                      </li>
+                      <li>
+                        Request model upload to Database managed by Revit
+                        Admins
+                      </li>
+                      <li>
+                        Request Audit of models to Revit Admins
+                      </li>
+                      <li>
+                        Easily see family details with quick info tab upon
+                        clicking
+                      </li>
+                      <li>
+                        Multiple display options
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    Tool 2: Auto save feature with variable timer
+                  </li>
+                  <li>
+                    Tool 3: Upload families to Database (Only avaliable to
+                    Revit Admins)
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div id="rla" class="tabcontentSide" style="display: none;">
-              <div class="appProjHeader">
-                <h2>Revit Library Addin</h2>
+            <div class="appSlideshowContainer">
+              <div class="appStory">
                 <p>
-                  <b>
-                    [C#] [.Net] [Visual Studio] [Windows Forms] [SQL] [LINQ]
-                    [Revit API]
-                  </b>
+                  This app was created whilst working at an Architecture firm
+                  were the staff were using a program called Unifi. Unifi
+                  acted as a centralized point to store Revit Families that
+                  could then be imported into projects
+                </p>
+                <p>
+                  The licencing contracts for the software were coming to an
+                  end and the company was not wanting to renew the lengthy
+                  lock in contract. I was tasked to create a similar
+                  application with a strict timeline as the licences were soon
+                  to expire. I created a Beta version of my Revit Tools within
+                  three days that allowed the Architects to continue there
+                  work whilst I continued to upgrade and maintain the software
+                  by pushing out patches via Group Policy
+                </p>
+
+                <p>
+                  As time went on employees began requesting additional
+                  features such as an Auto Save feature and an Admin upload
+                  panel. I ensured that the program would allow for such
+                  scale-ability and therefore became a platform for any
+                  additional features the copmany may desire.
                 </p>
               </div>
-
-              <div class="appSlideshowContainer">
-                <iframe
-                  width="40%"
-                  src="https://www.youtube.com/embed/Bl_KFkfzweg"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <div class="appFeatures">
-                  <h3>Features</h3>
-                  <ul>
-                    <li>
-                      Revit Addin with various tools
-                    </li>
-                    <li>
-                      Tool 1: Revit Library - Allows users to import family
-                      models into revit
-                      <ul>
-                        <li>
-                          Search by name, category or both
-                        </li>
-                        <li>
-                          Request model upload to Database managed by Revit
-                          Admins
-                        </li>
-                        <li>
-                          Request Audit of models to Revit Admins
-                        </li>
-                        <li>
-                          Easily see family details with quick info tab upon
-                          clicking
-                        </li>
-                        <li>
-                          Multiple display options
-                        </li>
-                        <li>
-                          Ability to search and add tags
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Tool 2: Auto save feature with variable timer
-                    </li>
-                    <li>
-                      Tool 3: Upload families to Database (Only avaliable to
-                      Revit Admins)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="appSlideshowContainer">
-                <div class="appStory">
-                  <p>
-                    This app was created whilst working at an Architecture firm
-                    were the staff were using a program called Unifi. Unifi
-                    acted as a centralized point to store Revit Families that
-                    could then be imported into projects
-                  </p>
-                  <p>
-                    The licencing contracts for the software were coming to an
-                    end and the company was not wanting to renew the lengthy
-                    lock in contract. I was tasked to create a similar
-                    application with a strict timeline as the licences were soon
-                    to expire. I created a Beta version of my Revit Tools within
-                    three days that allowed the Architects to continue there
-                    work whilst I continued to upgrade and maintain the software
-                    by pushing out patches via Group Policy
-                  </p>
-
-                  <p>
-                    As time went on employees began requesting additional
-                    features such as an Auto Save feature and an Admin upload
-                    panel. I ensured that the program would allow for such
-                    scale-ability and therefore became a platform for any
-                    additional features the copmany may desire.
-                  </p>
-                </div>
-                <div class="slideshow">
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary1.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Revit Addin showcasing all three tools"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary1.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary2.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Start up view of the Revit Library"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary2.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary3.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Example of a search by category."
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary3.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary4.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Quick info panel. Also contains section to send an audit request"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary4.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary5.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Switching to Grid view"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary5.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary6.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Option to import multiple families at once"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary6.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary7.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="User specific favourites tab"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary7.PNG"
-                      alt=""
-                  /></a>
-                </div>
+              <div class="slideshow">
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary1.PNG" data-lightbox="Revit Addin"
+                  data-title="Revit Addin showcasing all three tools"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary1.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary2.PNG" data-lightbox="Revit Addin"
+                  data-title="Start up view of the Revit Library"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary2.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary3.PNG" data-lightbox="Revit Addin"
+                  data-title="Example of a search by category."><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary3.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary4.PNG" data-lightbox="Revit Addin"
+                  data-title="Quick info panel. Also contains section to send an audit request"><img
+                    class="projectSlideshow" src="img/slideshow/revitLibrary4.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary5.PNG" data-lightbox="Revit Addin"
+                  data-title="Switching to Grid view"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary5.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary6.PNG" data-lightbox="Revit Addin"
+                  data-title="Option to import multiple families at once"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary6.PNG" alt="" /></a>
+                <a class="slideshowLinks revitImg" href="img/slideshow/revitLibrary7.PNG" data-lightbox="Revit Addin"
+                  data-title="User specific favourites tab"><img class="projectSlideshow"
+                    src="img/slideshow/revitLibrary7.PNG" alt="" /></a>
               </div>
             </div>
+          </div>
 
-            <div id="rla" class="tabcontentSide" style="display: none;">
-              <div class="appProjHeader">
-                <h2>Revit Library Addin</h2>
-                <p>
-                  <b
-                    >[C#] [.Net] [Visual Studio] [Windows Forms] [SQL] [LINQ]
-                    [Revit API]</b
-                  >
-                </p>
-              </div>
-              <div class="appSlideshowContainer">
-                <iframe
-                  width="40%"
-                  src="https://www.youtube.com/embed/WEwvZd9MpHE"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <div class="appFeatures">
-                  <h3>Features</h3>
-                  <ul>
-                    <li>
-                      Revit Addin with various tools
-                    </li>
-                    <li>
-                      Tool 1: Revit Library - Allows users to import family
-                      models into revit
-                      <ul>
-                        <li>
-                          Search by name, category or both
-                        </li>
-                        <li>
-                          Request model upload to Database managed by Revit
-                          Admins
-                        </li>
-                        <li>
-                          Request Audit of models to Revit Admins
-                        </li>
-                        <li>
-                          Easily see family details with quick info tab upon
-                          clicking
-                        </li>
-                        <li>
-                          Multiple display options
-                        </li>
-                      </ul>
-                    </li>
+          <div id="trt" class="tabcontentSide" style="display: none;">
+            <div class="appProjHeader">
+              <h2>Travel Request Tool</h2>
+              <p>
+                <b>[C#] [.Net] [Visual Studio] [MVC] [SQL] [HTML/JS/CSS]</b>
+              </p>
+            </div>
+            <div class="appSlideshowContainer">
+              <iframe width="40%" src="https://www.youtube.com/embed/Q4sKqIA15iY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="appFeatures">
+                <h3>Features</h3>
+                <ul>
+                  <li>
+                    Company Travel Request Form - Allows employees to request
+                    travel >> Manager approves >> Trip is sent to booking
+                    admin
+                  </li>
+                  <li>
+                    Area 1: Request Travel
+                    <ul>
+                      <li>
+                        This page is avaliable to all employees
+                      </li>
+                      <li>
+                        Allows users to fill out travel details for proposed
+                        trip
+                      </li>
+                    </ul>
+                  </li>
 
-                    <li>
-                      Tool 2: Auto save feature with variable timer
-                    </li>
-                    <li>
-                      Tool 3: Upload families to Database (Only avaliable to
-                      Revit Admins)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="appSlideshowContainer">
-                <div class="appStory">
-                  <p>
-                    This app was created whilst working at an Architecture firm
-                    were the staff were using a program called Unifi. Unifi
-                    acted as a centralized point to store Revit Families that
-                    could then be imported into projects
-                  </p>
-                  <p>
-                    The licencing contracts for the software were coming to an
-                    end and the company was not wanting to renew the lengthy
-                    lock in contract. I was tasked to create a similar
-                    application with a strict timeline as the licences were soon
-                    to expire. I created a Beta version of my Revit Tools within
-                    three days that allowed the Architects to continue there
-                    work whilst I continued to upgrade and maintain the software
-                    by pushing out patches via Group Policy
-                  </p>
-
-                  <p>
-                    As time went on employees began requesting additional
-                    features such as an Auto Save feature and an Admin upload
-                    panel. I ensured that the program would allow for such
-                    scale-ability and therefore became a platform for any
-                    additional features the copmany may desire.
-                  </p>
-                </div>
-                <div class="slideshow">
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary1.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Revit Addin showcasing all three tools"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary1.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary2.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Start up view of the Revit Library"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary2.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary3.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Example of a search by category."
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary3.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary4.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Quick info panel. Also contains section to send an audit request"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary4.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary5.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Switching to Grid view"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary5.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary6.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="Option to import multiple families at once"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary6.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks revitImg"
-                    href="img/slideshow/revitLibrary7.PNG"
-                    data-lightbox="Revit Addin"
-                    data-title="User specific favourites tab"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/revitLibrary7.PNG"
-                      alt=""
-                  /></a>
-                </div>
+                  <li>
+                    Area 2: Approve Travel
+                    <ul>
+                      <li>
+                        This page is only visable to managers
+                      </li>
+                      <li>
+                        Allows managers/team leaders to view requests and
+                        approve/deny them
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Area 3: Booking Admin
+                    <ul>
+                      <li>
+                        This page is only visable to the IT team
+                      </li>
+                      <li>
+                        Allows IT to see all the booking data in an organised
+                        fashion
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Area 4: Booking Admin
+                    <ul>
+                      <li>
+                        This page is only visable to employees who are
+                        responsible for booking the work related trips
+                      </li>
+                      <li>
+                        Allows booking employees to easily see what trips need
+                        to be booked
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <div id="trt" class="tabcontentSide" style="display: none;">
-              <div class="appProjHeader">
-                <h2>Travel Request Tool</h2>
+            <div class="appSlideshowContainer">
+              <div class="appStory">
                 <p>
-                  <b>[C#] [.Net] [Visual Studio] [MVC] [SQL] [HTML/JS/CSS]</b>
+                  This project was created to solve a problem we found in the
+                  workplace. Employees would request work trips via email.
+                  This meant the only records of the trip requests were easily
+                  lost, not approved correctly or simply fogotten about. We
+                  also faced the issue with a break down of communication
+                  between booking staff as emails were sent to individuals and
+                  not a group inbox.
+                </p>
+                <p>
+                  I worked along side one of the booking staff to create this
+                  web application to ensure it was tailored to their need. We
+                  decided to seperate the application into several layers. All
+                  employees could request travel this would then send an email
+                  their manager which would prompt them to view the approve
+                  Travel Section. The managers then had the choice to either
+                  accept or deny the trip. If denied the process stops here
+                  and the employee recieves an email with the reason for
+                  denial. If approved an email is sent to the booking
+                  employees prompting them to view the Booking Admin section.
+                  Here the staff have access to all the details needed to book
+                  the trip. Once booked they mark it as booked and the
+                  employee recieves a confirmation email.
+                </p>
+
+                <p>
+                  This was an extremly fun app to build. The entire request
+                  travel section is dynamic and transforms and prompts the
+                  employee depending on the input. The deployment of the app
+                  also streamlined the entire process and allowed for data
+                  analytics as now all travel requests were being tracked and
+                  stored.
                 </p>
               </div>
-              <div class="appSlideshowContainer">
-                <iframe
-                  width="40%"
-                  src="https://www.youtube.com/embed/Q4sKqIA15iY"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <div class="appFeatures">
-                  <h3>Features</h3>
-                  <ul>
-                    <li>
-                      Company Travel Request Form - Allows employees to request
-                      travel >> Manager approves >> Trip is sent to booking
-                      admin
-                    </li>
-                    <li>
-                      Area 1: Request Travel
-                      <ul>
-                        <li>
-                          This page is avaliable to all employees
-                        </li>
-                        <li>
-                          Allows users to fill out travel details for proposed
-                          trip
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      Area 2: Approve Travel
-                      <ul>
-                        <li>
-                          This page is only visable to managers
-                        </li>
-                        <li>
-                          Allows managers/team leaders to view requests and
-                          approve/deny them
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Area 3: Booking Admin
-                      <ul>
-                        <li>
-                          This page is only visable to the IT team
-                        </li>
-                        <li>
-                          Allows IT to see all the booking data in an organised
-                          fashion
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Area 4: Booking Admin
-                      <ul>
-                        <li>
-                          This page is only visable to employees who are
-                          responsible for booking the work related trips
-                        </li>
-                        <li>
-                          Allows booking employees to easily see what trips need
-                          to be booked
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="appSlideshowContainer">
-                <div class="appStory">
-                  <p>
-                    This project was created to solve a problem we found in the
-                    workplace. Employees would request work trips via email.
-                    This meant the only records of the trip requests were easily
-                    lost, not approved correctly or simply fogotten about. We
-                    also faced the issue with a break down of communication
-                    between booking staff as emails were sent to individuals and
-                    not a group inbox.
-                  </p>
-                  <p>
-                    I worked along side one of the booking staff to create this
-                    web application to ensure it was tailored to their need. We
-                    decided to seperate the application into several layers. All
-                    employees could request travel this would then send an email
-                    their manager which would prompt them to view the approve
-                    Travel Section. The managers then had the choice to either
-                    accept or deny the trip. If denied the process stops here
-                    and the employee recieves an email with the reason for
-                    denial. If approved an email is sent to the booking
-                    employees prompting them to view the Booking Admin section.
-                    Here the staff have access to all the details needed to book
-                    the trip. Once booked they mark it as booked and the
-                    employee recieves a confirmation email.
-                  </p>
-
-                  <p>
-                    This was an extremly fun app to build. The entire request
-                    travel section is dynamic and transforms and prompts the
-                    employee depending on the input. The deployment of the app
-                    also streamlined the entire process and allowed for data
-                    analytics as now all travel requests were being tracked and
-                    stored.
-                  </p>
-                </div>
-                <div class="slideshow">
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm1.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm1.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm2.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm2.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm3.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm3.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm4.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm4.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm5.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm5.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm6.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm6.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm7.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm7.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm8.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm8.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm9.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm9.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm10.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm10.PNG"
-                      alt=""
-                  /></a>
-                  <a
-                    class="slideshowLinks travelImg"
-                    href="img/slideshow/TravelForm11.PNG"
-                    data-lightbox="Travel Form"
-                    data-title="Travel Form"
-                    ><img
-                      class="projectSlideshow"
-                      src="img/slideshow/TravelForm11.PNG"
-                      alt=""
-                  /></a>
-                </div>
+              <div class="slideshow">
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm1.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm1.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm2.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm2.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm3.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm3.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm4.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm4.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm5.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm5.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm6.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm6.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm7.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm7.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm8.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm8.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm9.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm9.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm10.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm10.PNG"
+                    alt="" /></a>
+                <a class="slideshowLinks travelImg" href="img/slideshow/TravelForm11.PNG" data-lightbox="Travel Form"
+                  data-title="Travel Form"><img class="projectSlideshow" src="img/slideshow/TravelForm11.PNG"
+                    alt="" /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
-  </body>
+  </div>
+  <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+
 </html>

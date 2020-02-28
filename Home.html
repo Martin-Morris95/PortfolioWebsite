@@ -1,137 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Martin Morris Portfolio" />
-    <title>Martin Morris &ndash; Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
-      integrity="sha384-"
-      crossorigin="anonymous"
-    />
-    <link href="style/styles.css" rel="stylesheet" />
-    <!--[if lte IE 8]>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159294130-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159294130-1');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Martin Morris Portfolio" />
+  <title>Martin Morris &ndash; Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+    crossorigin="anonymous" />
+  <link href="style/styles.css" rel="stylesheet" />
+  <!--[if lte IE 8]>
       <link
         rel="stylesheet"
         href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css"
       />
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"
-    />
-    <!--<![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css" />
+  <!--<![endif]-->
 
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 
-    <!--[if lte IE 8]>
+  <!--[if lte IE 8]>
       <link rel="stylesheet" href="css/layouts/marketing-old-ie.css" />
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="style/marketing.css" />
-    <script src="js/p5.js"></script>
-    <script src="js/script.js"></script>
-    <!--<![endif]-->
-  </head>
-  <body>
-    <!-- <div class="PhoneBlocker">
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="style/marketing.css" />
+  <script src="js/p5.js"></script>
+  <script src="js/script.js"></script>
+  <!--<![endif]-->
+</head>
+
+<body>
+  <!-- <div class="PhoneBlocker">
       <h1 class="is-center">Mobile Version Coming Soon</h1>
       <h2 class="is-center">Please use a browser to view this site</h2>
       <h3 class="is-center">Sorry for the inconvience</h3>
     </div> -->
 
-    <div class="header">
-      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <i
-          class="fa fa-terminal pure-menu-heading"
-          style=" color:white; padding-right:0px;"
-        ></i
-        ><a class="pure-menu-heading" href="Home.html" style="padding-left:2px;"
-          >Martin Morris</a
-        >
+  <div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <i class="fa fa-terminal pure-menu-heading" style=" color:white; padding-right:0px;"></i><a
+        class="pure-menu-heading" href="Home.html" style="padding-left:2px;">Martin Morris</a>
 
-        <ul class="pure-menu-list">
-          <li class="pure-menu-item pure-menu-selected">
-            <a href="Home.html" class="pure-menu-link">About</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="Knowledge.html" class="pure-menu-link">Knowledge</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="projects.html" class="pure-menu-link">Projects</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected">
+          <a href="Home.html" class="pure-menu-link">About</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="Knowledge.html" class="pure-menu-link">Knowledge</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="projects.html" class="pure-menu-link">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <div>
+      <i class="fa fa-terminal pure-menu-heading" style=" color:white; padding-right:0px;display:inline;"></i><a
+        class="pure-menu-heading" href="Home.html" style="padding-left:2px;display:inline;">Martin Morris</a>
     </div>
 
-    <div class="topnav">
-      <div>
-        <i
-          class="fa fa-terminal pure-menu-heading"
-          style=" color:white; padding-right:0px;display:inline;"
-        ></i
-        ><a
-          class="pure-menu-heading"
-          href="Home.html"
-          style="padding-left:2px;display:inline;"
-          >Martin Morris</a
-        >
-      </div>
+    <!-- Navigation links (hidden by default) -->
 
-      <!-- Navigation links (hidden by default) -->
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+  </div>
+  <div id="myLinks">
+    <a href="Home.html">Home</a>
+    <a href="Knowledge.html">Knowledge</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <!-- style="background-image: url('img/common/BackDropHome.png'); background-repeat: no-repeat; height:100%;background-size: cover;" -->
+  <div class="backMobile" style="background-image:url(img/common/BackDropHomeMobile.png);">
+    <div id="homePageIntro">
+      <h1>Martin Morris</h1>
+      <div id="aboutMe">
+        <p>
+          Final year student studying a Bachelors of IT majoring in Computer
+          Science with experience as an Information Technology Support
+          Officer. Skilled in User Interface Design, Databases, Creative
+          Problem Solving and Software Development.
+        </p>
+        <div id="icon-container">
+          <img class="softwareIcon" src="img/SoftwareIcons/c-sharp.png" />
+          <img class="softwareIcon" src="img/SoftwareIcons/vs.png" />
+          <img class="softwareIcon" src="img/SoftwareIcons/game.png" />
+          <img class="softwareIcon" src="img/SoftwareIcons/sql.png" />
 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars fa-2x"></i>
-      </a>
-    </div>
-    <div id="myLinks">
-      <a href="Home.html">Home</a>
-      <a href="Knowledge.html">Knowledge</a>
-      <a href="projects.html">Projects</a>
-    </div>
-    <!-- style="background-image: url('img/common/BackDropHome.png'); background-repeat: no-repeat; height:100%;background-size: cover;" -->
-    <div
-      class="backMobile"
-      style="background-image:url(img/common/BackDropHomeMobile.png);"
-    >
-      <div id="homePageIntro">
-        <h1>Martin Morris</h1>
-        <div id="aboutMe">
-          <p>
-            Final year student studying a Bachelors of IT majoring in Computer
-            Science with experience as an Information Technology Support
-            Officer. Skilled in User Interface Design, Databases, Creative
-            Problem Solving and Software Development.
-          </p>
-          <div id="icon-container">
-            <img class="softwareIcon" src="img/SoftwareIcons/c-sharp.png" />
-            <img class="softwareIcon" src="img/SoftwareIcons/vs.png" />
-            <img class="softwareIcon" src="img/SoftwareIcons/game.png" />
-            <img class="softwareIcon" src="img/SoftwareIcons/sql.png" />
-
-            <img class="softwareIcon" src="img/SoftwareIcons/office.png" />
-            <img class="softwareIcon" src="img/SoftwareIcons/microsoft.png" />
-            <img class="softwareIcon" src="img/SoftwareIcons/web.png" />
-          </div>
+          <img class="softwareIcon" src="img/SoftwareIcons/office.png" />
+          <img class="softwareIcon" src="img/SoftwareIcons/microsoft.png" />
+          <img class="softwareIcon" src="img/SoftwareIcons/web.png" />
         </div>
       </div>
     </div>
-    <button
-      id="destroyButton"
-      class="button-error pure-button pulse-red"
-      onclick="destroy()"
-    >
-      Clear Creation
-    </button>
-    <footer class="footWeb footer l-box is-center"></footer>
-    <script src="js/sketch.js"></script>
-  </body>
+  </div>
+  <button id="destroyButton" class="button-error pure-button pulse-red" onclick="destroy()">
+    Clear Creation
+  </button>
+  <footer class="footWeb footer l-box is-center"></footer>
+  <script src="js/sketch.js"></script>
+</body>
+
 </html>
