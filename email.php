@@ -20,7 +20,7 @@ if($_POST) {
     }
      
    
-    $recipient = "test@martin-morris.com";
+    $recipient = "martin.morris@thomsonadsett.com";
     
    
      
