@@ -1,12 +1,14 @@
 * {
   font-family: sans-serif;
 }
+
 html,
 body {
   margin: 0 !important;
   padding: 0 !important;
   scroll-behavior: smooth;
 }
+
 /* .header {
   margin-top: 20px;
   text-align: center;
@@ -57,9 +59,11 @@ body {
 .resume-skills {
   width: 80%;
 }
+
 .resume-skills td {
   width: 50%;
 }
+
 .page-container-resume {
   margin: 5% 15%;
   margin-top: 1%;
@@ -68,6 +72,7 @@ body {
 #info-panel-resume {
   padding: 3%;
 }
+
 #info-panel-resume hr {
   margin: 2% 0%;
 }
@@ -76,8 +81,8 @@ body {
   margin-top: 10%;
 }
 
-.pure-menu-selected > .pure-menu-link,
-.pure-menu-selected > .pure-menu-link:visited {
+.pure-menu-selected>.pure-menu-link,
+.pure-menu-selected>.pure-menu-link:visited {
   color: white !important;
   font-weight: bold;
 }
@@ -88,14 +93,15 @@ body {
   left: 10%;
 }
 
-#homePageIntro > h1 {
+#homePageIntro>h1 {
   font-size: 120px;
 }
 
 #aboutMe {
   width: 50%;
 }
-#aboutMe > p {
+
+#aboutMe>p {
   color: black;
   line-height: 1.2em;
   font-size: 28px;
@@ -142,6 +148,7 @@ body {
 .project-description {
   width: 50%;
 }
+
 .project-container {
   display: flex;
   justify-content: space-around;
@@ -160,6 +167,7 @@ body {
   height: 0;
   overflow: hidden;
 }
+
 #resume-knowledge.rActive {
   opacity: 1;
   height: auto;
@@ -206,6 +214,7 @@ body {
 .tabSide button.active {
   background-color: #16679c;
 }
+
 /*blah*/
 /* Style the tab content */
 .tabcontentSide {
@@ -227,6 +236,7 @@ body {
   width: 40%;
   margin-top: 1em;
 }
+
 .slideshowLong {
   width: 25%;
   margin-top: 1em;
@@ -250,6 +260,7 @@ iframe {
   width: 100%;
   height: 100%;
 }
+
 .projectSlideshow {
   width: inherit;
 }
@@ -264,9 +275,11 @@ iframe {
 .appFeatures {
   width: 50%;
 }
+
 .appFeatures h3 {
   margin-top: 0;
 }
+
 .appProjHeader {
   padding: 1% 3% 0% 3%;
 }
@@ -318,21 +331,26 @@ iframe {
 .pulse-red {
   animation: shadow-pulse 1s infinite;
 }
+
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0 35px rgba(255, 0, 0, 0);
   }
 }
+
 .tabOptionsMob {
   display: none;
 }
+
 .gamesVid {
   width: 640;
   height: 360;
 }
+
 .container {
   position: relative;
   width: 100%;
@@ -372,6 +390,7 @@ iframe {
   font-size: 16px;
   padding: 16px 32px;
 }
+
 /* Style the navigation menu */
 .topnav {
   display: none !important;
@@ -421,6 +440,7 @@ iframe {
   width: 100%;
   z-index: 4;
 }
+
 #myLinks a {
   color: white;
   display: block;
@@ -439,6 +459,7 @@ iframe {
 }
 
 @media only screen and (max-width: 900px) {
+
   /* Style the navigation menu */
   .topnav {
     overflow: hidden;
@@ -453,46 +474,58 @@ iframe {
     display: none;
     z-index: 4;
   }
+
   .pure-menu-item {
     font-size: 50%;
   }
+
   .header {
     display: none;
   }
+
   .home-menu i {
     margin-left: 1em !important;
   }
+
   .home-menu {
     text-align: start !important;
   }
+
   .home-menu ul {
     float: right;
   }
+
   #destroyButton {
     display: none;
   }
+
   #icon-container {
     width: 90%;
   }
+
   #defaultCanvas0 {
     display: none;
   }
+
   #homePageIntro {
     top: 16%;
     left: 0;
   }
-  #homePageIntro > h1 {
+
+  #homePageIntro>h1 {
     font-size: 35px;
     line-height: 1em;
     width: 100%;
     text-align: center;
   }
-  #aboutMe > p {
+
+  #aboutMe>p {
     width: 100% !important;
     font-size: 18px;
     padding: 0% 10%;
     text-align: center;
   }
+
   #aboutMe {
     width: 100% !important;
   }
@@ -516,6 +549,7 @@ iframe {
   .resume-skills {
     width: 100%;
   }
+
   #resume-sidePanel {
     width: 100%;
     display: flex;
@@ -524,14 +558,17 @@ iframe {
 
     border: none;
   }
+
   #resume-sidePanel img {
     width: 40%;
     margin-top: 0;
   }
+
   #contact-info-resume {
     width: 100%;
     text-align: center;
   }
+
   .pure-g {
     letter-spacing: 0.1em;
   }
@@ -543,29 +580,37 @@ iframe {
   #resume-sidePanel p {
     margin: auto;
   }
+
   .PhoneBlocker {
     display: block !important;
   }
+
   .page-container-resume {
     padding: 2%;
   }
+
   .page-container {
     margin: 1em;
   }
+
   .knowledgeButt {
     width: 40%;
     margin-bottom: 6%;
   }
+
   #resume-sidePanel {
     display: block !important;
     padding-bottom: 0;
   }
+
   .home-menu i {
     padding: 0;
   }
+
   #resume-buttons {
     text-align: center;
   }
+
   .project-container {
     display: block;
     margin-bottom: 15%;
@@ -576,12 +621,15 @@ iframe {
     border: 1px black solid;
     margin-top: 10%;
   }
-  .project-container > div {
+
+  .project-container>div {
     width: 100%;
   }
+
   .knowledgeButt {
     height: 45px;
   }
+
   #resume-sidePanel img {
     display: block !important;
     margin: auto;
@@ -593,6 +641,7 @@ iframe {
     height: 100vh;
     width: 100vw;
   }
+
   .container .middle {
     opacity: 1;
     transform: translate(0, 0);
@@ -600,10 +649,12 @@ iframe {
     top: 0;
     left: 0;
   }
+
   .text {
     font-size: 12px;
     padding: 8px 16px;
   }
+
   .gamesVid {
     width: 100% !important;
     height: auto !important;
@@ -616,6 +667,7 @@ iframe {
   .tabSide {
     display: none;
   }
+
   .tabOptionsMob {
     width: 100%;
     display: block;
@@ -624,6 +676,7 @@ iframe {
   .tablinkMob {
     flex-grow: 1;
   }
+
   .topnav {
     display: block;
   }
@@ -631,4 +684,60 @@ iframe {
   .footWeb {
     display: none !important;
   }
+}
+
+
+
+
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #CC4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #CC6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #CC4949;
 }

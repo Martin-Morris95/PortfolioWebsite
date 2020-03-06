@@ -115,6 +115,13 @@
   <button id="destroyButton" class="button-error pure-button pulse-red" onclick="destroy()">
     Clear Creation
   </button>
+
+  <form action="email.php" method="POST">
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT" />
+  </form>
   <footer class="footWeb footer l-box is-center"></footer>
   <script src="js/sketch.js"></script>
 </body>
