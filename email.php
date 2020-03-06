@@ -1,10 +1,10 @@
 
 
 <?php
-require 'PHPMailer-master/PHPMailerAutoload.php';
+
 
 if($_POST) {
-   
+    require 'PHPMailer-master/PHPMailerAutoload.php';
      
     $email='martin.morris@outlook.com';//change email to receipents email
 
