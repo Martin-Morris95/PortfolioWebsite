@@ -20,13 +20,13 @@ if($_POST) {
     }
      
    
-    $recipient = "martin.morris95@outlook.com";
+    $recipient = "test@martin-morris.com";
     
    
      
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . 'test@martin-morris.com' . "\r\n";
+    .'From: ' . '$visitor_email' . "\r\n";
      
     if(mail($recipient, "Website Query", $visitor_message, $headers)) {
         echo "<p>Thank you for contacting us, $visitor_name. We will be in touch soon.</p>";
