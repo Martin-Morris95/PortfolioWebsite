@@ -44,15 +44,15 @@ $mail->Subject = $visitor_email;
 $mail->Body = $visitor_message;
 
 
-if(!$mail->send()) {
-   echo 'Mailer Error: ' . $mail->ErrorInfo;
-   echo 'Email Has not Sent';
+if($mail->send()) {
 
+   echo "email sent";
 }
 else{
-  echo "email sent";
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo 'Email Has not Sent';
 }
-
+echo "hey";
 
 ?>
 
