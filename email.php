@@ -4,6 +4,23 @@
 <?php
 
     require 'PHPMailer-master/PHPMailerAutoload.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    /* Exception class. */
+    require 'PHPMailer\Exception.php';
+    
+    /* The main PHPMailer class. */
+    require 'PHPMailer\PHPMailer.php';
+    
+    /* SMTP class, needed if you want to use SMTP. */
+    require 'PHPMailer\SMTP.php';
+    
+
+
+
+
     $email='martin.morris@outlook.com';//change email to receipents email
 
 $visitor_name = "";
@@ -25,7 +42,7 @@ if(isset($_POST['text'])) {
 }
  
 
-$mail = new PHPMailer();
+$mail = new PHPMailer(TRUE);
 $mail->SMTPDebug = 0; 
 $mail->SMTPAuth = false;//SMTP authentication should be false
 $mail->SMTPSecure = 'none';// Security type should be none 
