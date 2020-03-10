@@ -42,9 +42,8 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = $visitor_email;
 
 $mail->Body = $visitor_message;
-$mail->send()
-echo "email sent";
-/*
+
+
 if(!$mail->send()) {
    echo 'Mailer Error: ' . $mail->ErrorInfo;
    echo 'Email Has not Sent';
@@ -53,7 +52,7 @@ if(!$mail->send()) {
 else{
   echo "email sent";
 }
-*/
+
 
 ?>
 
