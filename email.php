@@ -80,7 +80,7 @@ $headers = 'From: '.$email_from."\r\n".
 Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
- 
+ header("Location:http://martin-morris.com/Knowledge.html/"); 
 }
 ?>
 
