@@ -47,7 +47,7 @@ $mail->Body = $visitor_message;
 if(!$mail->send()) {
    echo 'Mailer Error: ' . $mail->ErrorInfo;
    echo 'Email Has not Sent';
-   exit;
+
 }
 else{
   echo "email sent";
