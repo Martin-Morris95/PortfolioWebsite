@@ -91,19 +91,19 @@
 
       <!-- Tab links -->
       <div class="tab">
-        <button class="tablinks active" onclick="openTab(event, 'Applications')">
+        <button class="tablinks" onclick="openTab(event, 'Applications')">
           Applications
         </button>
         <button class="tablinks" onclick="openTab(event, 'Games')">
           Games
         </button>
-        <button class="tablinks" onclick="openTab(event, 'Websites')">
+        <button class="tablinks active" onclick="openTab(event, 'Websites')">
           Websites
         </button>
       </div>
 
       <!-- Tab content -->
-      <div id="Websites" class="tabcontent" >
+      <div id="Websites" class="tabcontent" style="display: block">
 
         <div class="project-container">
           <div class="project-description">
@@ -297,7 +297,8 @@
           </div>
         </div>
       </div>
-      <div id="Applications" class="tabcontent" style="display: block">
+      <div id="Applications" class="tabcontent">
+        <h1 id="MobileApplicationBanner" style="display: none;">Please view the desktop site for list of projects</h1>
         <div id="applicationPanel">
           <div class="tabSide">
              <button class="tablinksSide" onclick="openTabSide(event, 'pv')">
