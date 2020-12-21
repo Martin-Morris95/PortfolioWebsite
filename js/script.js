@@ -37,6 +37,8 @@ function openTabSide(evt, tabName) {
     carouselTravel();
   } else if (tabName == "sit") {
     carouselSysInfo();
+  } else if (tabName == "pv") {
+    carouselPvInfo();
   }
 
   // Get all elements with class="tabcontent" and hide them
@@ -72,6 +74,8 @@ function openTabSideMob(evt, tabName) {
     carouselTravel();
   } else if (tabName == "sit") {
     carouselSysInfo();
+  } else if (tabName == "pv") {
+    carouselPvInfo();
   }
 
   // Get all elements with class="tabcontent" and hide them
@@ -180,6 +184,25 @@ function carouselTravel() {
   }
   x[slideIndex - 1].style.display = "block";
   Travelto = setTimeout(carouselTravel, 4000); // Change image every 2 seconds
+}
+
+var Pvto = null;
+function carouselPvInfo() {
+  if (Pvto) {
+    clearTimeout(Pvto);
+  }
+  var i;
+  var x = null;
+  x = document.getElementsByClassName("PVImg");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
+  Pvto = setTimeout(carouselPvInfo, 4000); // Change image every 2 seconds
 }
 
 var SysInfo = null;
