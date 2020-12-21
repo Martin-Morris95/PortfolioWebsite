@@ -458,9 +458,6 @@ iframe {
 }
 
 @media only screen and (max-width: 900px) {
-  #MobileApplicationBanner {
-    display: block;
-  }
   /* Style the navigation menu */
   .topnav {
     overflow: hidden;
