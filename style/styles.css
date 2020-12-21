@@ -456,8 +456,14 @@ iframe {
 #myLinks a:last-child {
   border-bottom: none;
 }
-
+#MobileApplicationBanner {
+  display: none;
+}
 @media only screen and (max-width: 900px) {
+  #MobileApplicationBanner {
+    display: block;
+    text-align: center;
+  }
   /* Style the navigation menu */
   .topnav {
     overflow: hidden;
