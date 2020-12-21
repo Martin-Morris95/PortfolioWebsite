@@ -80,16 +80,14 @@ function draw() {
   }
 }
 
-function slowJiggle() {
-  for (i = 0; i < circles.length; i++) {
-    circles[i].x = circles[i].x + random(-1, 1);
-    circles[i].y = circles[i].y + random(-1, 1);
-  }
-}
-
 function drawCircles() {
   for (i = 0; i < circles.length; i++) {
-    ellipse(circles[i].x, circles[i].y, circles[i].size, circles[i].size);
+    ellipse(
+      circles[i].x + random(-1, 1),
+      circles[i].y + random(-1, 1),
+      circles[i].size,
+      circles[i].size
+    );
   }
 }
 
