@@ -46,7 +46,7 @@ function draw() {
   strokeWeight(1.5);
   stroke(24, 106, 181);
   drawCircles();
-
+  slowJiggle();
   noStroke();
   calculateLines();
   if (destroyPage) {
@@ -77,6 +77,13 @@ function draw() {
       x.classList.remove("pure-button-disabled");
       x.classList.add("pulse-red");
     }
+  }
+}
+
+function slowJiggle() {
+  for (i = 0; i < circles.length; i++) {
+    circles[i].x = circles[i].x + random(-1, 1);
+    circles[i].y = circles[i].y + random(-1, 1);
   }
 }
 
@@ -161,7 +168,7 @@ function calculateLines() {
               x1: circles[i].x,
               y1: circles[i].y,
               x2: circles[j].x,
-              y2: circles[j].y
+              y2: circles[j].y,
             });
           }
         }
@@ -256,7 +263,7 @@ function setupCircles() {
     { x: 1721, y: buffer + 960, size: random(5, 15), active: false },
     { x: 1759, y: buffer + -10, size: random(5, 15), active: false },
     { x: 1890, y: buffer + -10, size: random(5, 15), active: false },
-    { x: 2000, y: buffer + 367, size: random(5, 15), active: false }
+    { x: 2000, y: buffer + 367, size: random(5, 15), active: false },
   ];
 }
 /*
