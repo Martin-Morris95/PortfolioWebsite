@@ -83,8 +83,8 @@ function draw() {
 function drawCircles() {
   for (i = 0; i < circles.length; i++) {
     ellipse(
-      circles[i].x + random(-1, 1),
-      circles[i].y + random(-1, 1),
+      circles[i].x + random(-30, 30),
+      circles[i].y + random(-30, 30),
       circles[i].size,
       circles[i].size
     );
