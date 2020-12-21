@@ -82,12 +82,7 @@ function draw() {
 
 function drawCircles() {
   for (i = 0; i < circles.length; i++) {
-    ellipse(
-      circles[i].x + random(-30, 30),
-      circles[i].y + random(-30, 30),
-      circles[i].size,
-      circles[i].size
-    );
+    ellipse(circles[i].x, circles[i].y, circles[i].size, circles[i].size);
   }
 }
 

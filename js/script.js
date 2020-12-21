@@ -99,6 +99,11 @@ function openResume(evt) {
   var x = document.getElementById("resume-knowledge");
   var button = document.getElementById("resume-show-button");
 
+  $("#resume-knowledge").slideDown("slow", function () {
+    // Animation complete.
+  });
+
+  /*
   if (window.getComputedStyle(x).opacity == 0) {
     x.classList.remove("rInActive");
     x.classList.add("rActive");
@@ -109,6 +114,7 @@ function openResume(evt) {
     x.classList.remove("rActive");
     button.innerHTML = "Show ";
   }
+  */
 }
 
 var Revitto = null;
