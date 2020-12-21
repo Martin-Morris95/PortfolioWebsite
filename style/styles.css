@@ -452,12 +452,15 @@ iframe {
   text-align: center;
   box-shadow: none;
 }
-
+.mobileProjectVid {
+  width: 80%;
+  height: 300px;
+}
 #myLinks a:last-child {
   border-bottom: none;
 }
 #MobileApplicationBanner {
-  display: none;
+  display: none !important;
 }
 @media only screen and (max-width: 900px) {
   #MobileApplicationBanner {

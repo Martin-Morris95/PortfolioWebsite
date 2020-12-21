@@ -301,10 +301,10 @@
      
       <div id="Applications" class="tabcontent" style="display: block">
         
-        <div id="applicationPanel">
           <!--Mobile application view-->
-          <div id="MobileApplicationBanner" style="display: none; margin-top: 1em;">
+          <div id="MobileApplicationBanner" style="display: none;">
           <!--Panorama-->
+          <h3 style="text-align: center; font-style: italic; ">For a full list of projects please view the website on your computer</h3>
           <div class="appProjHeader">
               <h2>Panoramic Viewer</h2>
               <p>
@@ -313,7 +313,7 @@
                 </b>
               </p>
             </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/vk2kJqgfMpY" 
+          <iframe class = "mobileProjectVid" src="https://www.youtube.com/embed/vk2kJqgfMpY" 
           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
      
@@ -324,7 +324,7 @@
                 <b>[C#] [.Net] [Visual Studio] [WPF] [XAML] [SQL] [LINQ]</b>
               </p>
             </div>
-          <iframe width="40%" src="https://www.youtube.com/embed/7IAP9pP58S8" frameborder="0"
+          <iframe class = "mobileProjectVid" src="https://www.youtube.com/embed/7IAP9pP58S8" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
@@ -336,7 +336,7 @@
                   [Revit API]</b>
               </p>
             </div>
-          <iframe width="40%" src="https://www.youtube.com/embed/Bl_KFkfzweg" frameborder="0"
+          <iframe class = "mobileProjectVid" src="https://www.youtube.com/embed/Bl_KFkfzweg" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
@@ -346,7 +346,7 @@
                 <b>[C#] [.Net] [Visual Studio] [MVC] [SQL] [HTML/JS/CSS]</b>
               </p>
             </div>
-          <iframe width="40%" src="https://www.youtube.com/embed/Q4sKqIA15iY" frameborder="0"
+          <iframe class = "mobileProjectVid" src="https://www.youtube.com/embed/Q4sKqIA15iY" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
           
@@ -360,11 +360,11 @@
                 </b>
               </p>
             </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ev2t2cLpLhs" frameborder="0" 
+          <iframe class = "mobileProjectVid" src="https://www.youtube.com/embed/Ev2t2cLpLhs" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           <h3 style="text-align: center;">For a full list of projects please view the website on your computer</h3>
-
+            </div>
        
        
 
@@ -372,6 +372,9 @@
 
            <!--Mobile application view-->
            
+
+        <div id="applicationPanel">
+        
           <div class="tabSide">
              
              <button class="tablinksSide" onclick="openTabSide(event, 'pv')">
