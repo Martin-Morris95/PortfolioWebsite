@@ -46,7 +46,7 @@ function draw() {
   strokeWeight(1.5);
   stroke(24, 106, 181);
   drawCircles();
-  slowJiggle();
+
   noStroke();
   calculateLines();
   if (destroyPage) {
